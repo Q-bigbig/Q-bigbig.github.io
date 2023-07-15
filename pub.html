@@ -30,12 +30,45 @@
 
 <script type="text/javascript" src="./jquery.min.js"></script>
 <script>
-    function checkboxOnclick(checkbox) {
-        var name = checkbox.value;
-        var ele_tag = "";
-        ele_tag = '.tag-'+name
-        $(ele_tag).prop("hidden", !checkbox.checked);
-    }
+	function checkboxOnclick(checkbox) {
+	
+		var checkMap = new Map()
+		
+		AI_security = $("#AI_security")
+		Source_attribution = $("#Source_attribution")
+		Tamper_detection = $("#Tamper_detection")
+		Information_hiding = $("#Information_hiding")
+		Others = $("#Others")
+		
+		checkMap.set("AI_security",AI_security.prop("checked"))
+		checkMap.set("Source_attribution",Source_attribution.prop("checked"))
+		checkMap.set("Tamper_detection",Source_attribution.prop("checked"))
+		checkMap.set("Information_hiding",Information_hiding.prop("checked"))
+		checkMap.set("Others",Others.prop("checked"))
+		console.log(checkMap)
+		
+		var iterator = checkMap[Symbol.iterator]()
+		for (var item of iterator) {
+			var ele_tag = ""
+			ele_tag = '.tag-' + item[0]
+			$(ele_tag).prop("hidden",true)
+		}
+		
+		var iterator = checkMap[Symbol.iterator]()
+		for (var item of iterator) {
+			console.log(item)
+			console.log(item[0])
+			console.log(item[1])
+			if (item[1] == false) {
+				console.log("这个隐藏")
+			}
+			else {
+				var ele_tag = ""
+				ele_tag ='.tag-' + item[0]
+				$(ele_tag).prop("hidden", false)
+			}
+		}
+	}
 </script>
 
 <div class="box container ">
@@ -85,12 +118,12 @@
         </div>
 		
 		<div style="padding-left:20px">
-		<label class="col-xs-4" style="color: #1367a7;"><input name="AI security" type="checkbox" value="AI_security" checked="checked" onclick="checkboxOnclick(this)">AI security（人工智能安全）</label>
-			<label class="col-xs-4" style="color: #1367a7"><input name="Source attribution" type="checkbox" value="Source_attribution" checked="checked" onclick="checkboxOnclick(this)">Source attribution（来源取证）</label>
-			<label class="col-xs-4" style="color: #1367a7;"><input name="Tamper detection" type="checkbox" value="Tamper_detection" checked="checked" onclick="checkboxOnclick(this)">Tampering detection（篡改检测）</label>
-			<label class="col-xs-4" style="color: #1367a7;"><input name="Information hiding" type="checkbox" value="Information_hiding" checked="checked" onclick="checkboxOnclick(this)">Data hiding（信息隐藏）</label>
+		<label class="col-xs-4" style="color: #1367a7;"><input id="AI_security" name="AI security" type="checkbox" value="AI_security" checked="checked" onclick="checkboxOnclick(this)">AI security（人工智能安全）</label>
+			<label class="col-xs-4" style="color: #1367a7"><input id="Source_attribution" name="Source attribution" type="checkbox" value="Source_attribution" checked="checked" onclick="checkboxOnclick(this)">Source attribution（来源取证）</label>
+			<label class="col-xs-4" style="color: #1367a7;"><input id="Tamper_detection" name="Tamper detection" type="checkbox" value="Tamper_detection" checked="checked" onclick="checkboxOnclick(this)">Tampering detection（篡改检测）</label>
+			<label class="col-xs-4" style="color: #1367a7;"><input id="Information_hiding" name="Information hiding" type="checkbox" value="Information_hiding" checked="checked" onclick="checkboxOnclick(this)">Data hiding（信息隐藏）</label>
 			
-			<label class="col-xs-4" style="color: #1367a7;"><input name="Others" type="checkbox" value="Others" checked="checked" onclick="checkboxOnclick(this)">Others（其他）</label>
+			<label class="col-xs-4" style="color: #1367a7;"><input id="Others" name="Others" type="checkbox" value="Others" checked="checked" onclick="checkboxOnclick(this)">Others（其他）</label>
 			<label class="col-xs-4" style="color: #1367a7"><a href="./pub.html">&nbsp;&nbsp;&nbsp;Full List</a></label>
 		</div>
         
@@ -1354,7 +1387,7 @@
 			</div>
         </div>
 
-        最后修改时间:2023-07-15 11:16:30
+        最后修改时间:2023-07-15 18:11:54
     </div>
 </div>
 </body>
