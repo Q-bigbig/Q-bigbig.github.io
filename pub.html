@@ -36,13 +36,13 @@
 		
 		AI_security = $("#AI_security")
 		Source_attribution = $("#Source_attribution")
-		Tamper_detection = $("#Tamper_detection")
+		Tampering_detection = $("#Tampering_detection")
 		Information_hiding = $("#Information_hiding")
 		Others = $("#Others")
 		
 		checkMap.set("AI_security",AI_security.prop("checked"))
 		checkMap.set("Source_attribution",Source_attribution.prop("checked"))
-		checkMap.set("Tamper_detection",Source_attribution.prop("checked"))
+		checkMap.set("Tampering_detection",Tampering_detection.prop("checked"))
 		checkMap.set("Information_hiding",Information_hiding.prop("checked"))
 		checkMap.set("Others",Others.prop("checked"))
 		console.log(checkMap)
@@ -120,7 +120,7 @@
 		<div style="padding-left:20px">
 		<label class="col-xs-4" style="color: #1367a7;"><input id="AI_security" name="AI security" type="checkbox" value="AI_security" checked="checked" onclick="checkboxOnclick(this)">AI security（人工智能安全）</label>
 			<label class="col-xs-4" style="color: #1367a7"><input id="Source_attribution" name="Source attribution" type="checkbox" value="Source_attribution" checked="checked" onclick="checkboxOnclick(this)">Source attribution（来源取证）</label>
-			<label class="col-xs-4" style="color: #1367a7;"><input id="Tamper_detection" name="Tamper detection" type="checkbox" value="Tamper_detection" checked="checked" onclick="checkboxOnclick(this)">Tampering detection（篡改检测）</label>
+			<label class="col-xs-4" style="color: #1367a7;"><input id="Tampering_detection" name="Tampering detection" type="checkbox" value="Tampering_detection" checked="checked" onclick="checkboxOnclick(this)">Tampering detection（篡改检测）</label>
 			<label class="col-xs-4" style="color: #1367a7;"><input id="Information_hiding" name="Information hiding" type="checkbox" value="Information_hiding" checked="checked" onclick="checkboxOnclick(this)">Data hiding（信息隐藏）</label>
 			
 			<label class="col-xs-4" style="color: #1367a7;"><input id="Others" name="Others" type="checkbox" value="Others" checked="checked" onclick="checkboxOnclick(this)">Others（其他）</label>
@@ -135,9 +135,9 @@
                 </h2>
             </div>
         </div>
-        <div class="publication media tag-AI_security tag-Source_attribution">
+        <div class="publication media tag-AI_security tag-Source_attribution" id="AI_security_3">
             <div class="media-body" style="width:825px;display:inline-block">
-				
+				<font>[66]</font>
                 <b>CSC-Net: Cross-color Spatial Co-occurrence Matrix Network for Detecting Synthesized Fake Images</b>
                 <br>
                 <small><span style="font-weight: 700">T. Qiao</span>, Y. Chen, X. Zhou, R. Shi, H. Shao, K. Shen, X. Luo</small>
@@ -155,6 +155,7 @@
         </div>
         <div class="publication media tag-AI_security">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[65]</font>
                 <b>A Novel Model Watermarking for Protecting Generative Adversarial Network</b>
                 <br>
                <small><span style="font-weight: 700">T. Qiao</span>, Y. Ma, N. Zheng, H. Wu, Y. Chen, M. Xu, X. Luo</small>
@@ -183,6 +184,7 @@
         </div>
         <div class="publication media tag-Others">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[64]</font>
                 <b>Transmission Removal from a Single Glass Scene and Its Application in Photographer Identification</b>
                 <br>
                 <small>Z. Li, H. Yao, R. Shi, <span style="font-weight: 700">T. Qiao</span>, C. Qin</small>
@@ -198,8 +200,9 @@
 					</a>
 			</div>
         </div>
-        <div class="publication media tag-AI_security tag-Source_attribution">
+        <div class="publication media tag-AI_security tag-Source_attribution" id="AI_security_2">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[63]</font>
                 <b>FGDNet: Fine-Grained Detection Network Towards Face Anti-Spoofing</b>
                 <br>
                <small><span style="font-weight: 700">T. Qiao</span>, J. Wu, N. Zheng, M. Xu X. Luo</small>
@@ -215,8 +218,9 @@
 					</a>
 			</div>
         </div>
-        <div class="publication media tag-Source_attribution">
+        <div class="publication media tag-Source_attribution" id="Source_attribution_1">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[62]</font>
                 <b>Efficient Privacy-Preserving Forensic Method for Camera Model Identification</b>
                 <br>
                 <small>Y. Chen, <span style="font-weight: 700">T. Qiao*</span>, F. Retraint G. Hu</small>
@@ -232,8 +236,9 @@
 					</a>
 			</div>
         </div>
-        <div class="publication media tag-Tamper_detection">
+        <div class="publication media tag-Tampering_detection" id="Tampering_detection_3">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[61]</font>
                 <b>Image splicing forgery detection using simplified generalized noise model</b>
                 <br>
                 <small>Y. Chen, F. Retraint, <span style="font-weight: 700">T. Qiao*</span></small>
@@ -249,8 +254,9 @@
 					</a>
 			</div>
         </div>
-        <div class="publication media tag-AI_security tag-Source_attribution">
+        <div class="publication media tag-AI_security tag-Source_attribution" id="AI_security_1">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[60]</font>
                 <b>Unsupervised Learning-Based Framework for Deepfake Video Detection</b>
                 <br>
                 <small>L. Zhang, <span style="font-weight: 700">T. Qiao*</span>, M. Xu, N. Zheng and S. Xie
@@ -267,8 +273,9 @@
 					</a>
 			</div>
         </div>
-        <div class="publication media tag-AI_security">
+        <div class="publication media tag-AI_security" id="AI_security_4">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[59]</font>
                 <b>Towards DeepFake Video Forensics based on Facial Textural Disparities in Multi-color Channels</b>
                 <br>
                <small>Z. Xia, <span style="font-weight: 700">T. Qiao*</span>, M. Xu, N. Zheng, S. Xie</small>
@@ -285,8 +292,9 @@
 					</a>
 			</div>
         </div>
-        <div class="publication media tag-Information_hiding">
+        <div class="publication media tag-Information_hiding" id="Data_hiding_4">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[58]</font>
                 <b>图像空域可逆信息隐藏研究进展</b>
                 <br>
                 <small>武晓帅， 徐明， <span style="font-weight: 700">乔通*</span>， 潘彬民， 廖鑫</small>
@@ -305,6 +313,7 @@
         </div>
         <div class="publication media tag-Others">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[57]</font>
                 <b>Objective Object Segmentation Visual Quality Evaluation: Quality Measure and Pooling Method</b>
                 <br>
                <small>R. Shi,J. Ma, K. N. Ngan, J. Xiong, <span style="font-weight: 700">T. Qiao*</span></small>
@@ -323,6 +332,7 @@
         </div>
         <div class="publication media tag-Others">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[56]</font>
                 <b>Encrypted Image Visual Security Index via Non-Local Recognizable Degree Evaluation</b>
                 <br>
                <small>R Shi, J Xiong, <span style="font-weight: 700">T. Qiao</span></small>
@@ -341,6 +351,7 @@
         </div>
         <div class="publication media tag-Information_hiding">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[55]</font>
                 <b>Novel Hidden Bit Location Method towards JPEG Steganography</b>  
                 <br>
                <small>B Pan, <span style="font-weight: 700">T. Qiao*</span>, J Li, Y Chen, C Yang</small>
@@ -359,6 +370,7 @@
         </div>
         <div class="publication media tag-AI_security">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[54]</font>
                 <b>Deepfake Video Detection Based on MesoNet with Preprocessing Module</b>
                 <br>
                <small>Z Xia, <span style="font-weight: 700">T. Qiao*</span>, M Xu, X Wu, L Han, Y Chen</small>
@@ -375,8 +387,9 @@
 					</a>
 			</div>
         </div>                            
-        <div class="publication media tag-Information_hiding">
+        <div class="publication media tag-Information_hiding" id="Data_hiding_3">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[53]</font>
                 <b>Sign steganography revisited with robust domain selection</b>
                 <br>
                 <small>X. Wu, <span style="font-weight: 700">T. Qiao*</span>, Y. Chen, M. Xu, N. Zheng, X. Luo</small>
@@ -395,6 +408,7 @@
         </div>
         <div class="publication media tag-Information_hiding">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[52]</font>
                 <b>Toward Steganographic Payload Location via Neighboring Weight Algorithm</b>
                 <br>
                 <small><span style="font-weight: 700">T. Qiao</span>, X. Luo, B. Pan, Y. Chen, X. Wu</small>
@@ -411,8 +425,9 @@
 					</a>
 			</div>
         </div>
-        <div class="publication media tag-Source_attribution">
+        <div class="publication media tag-Source_attribution" id="Source_attribution_2">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[51]</font>
                 <b>Classifying between computer generated and natural images: An empirical study from RAW to JPEG format</b>
                 <br>
                 <small><span style="font-weight: 700">T. Qiao</span>, X. Luo, H. Yao, R. Shi</small>
@@ -429,8 +444,9 @@
 					</a>
 			</div>
         </div>
-        <div class="publication media tag-Tamper_detection">
+        <div class="publication media tag-Tampering_detection">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[50]</font>
                 <b>Detecting Spliced Image Based on Simplified Statistical Model</b>
                 <br>
                 <small>L. Chen, F. Retraint, <span style="font-weight: 700">T. Qiao</span></small>
@@ -455,8 +471,9 @@
                 </h2>
             </div>
         </div>
-        <div class="publication media tag-Information_hiding">
+        <div class="publication media tag-Information_hiding" id="Data_hiding_2">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[49]</font>
                 <b>Robust Steganography Resisting JPEG Compression By Improving Selection of Cover Element</b>
                 <br>
                 <small><span style="font-weight: 700">T. Qiao</span>, S. Wang, X. Luo, Z. Zhu</small>
@@ -475,6 +492,7 @@
         </div>
         <div class="publication media tag-AI_security tag-Source_attribution">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[48]</font>
                 <b>Towards Face Presentation Attack Detection Based on Residual Color Texture Representation</b>
                 <br>
                 <small>Y. Du, <span style="font-weight: 700">T. Qiao</span>（共同一作）, M. Xu, N. Zheng</small>
@@ -490,8 +508,9 @@
 					</a>
 			</div>
         </div>
-        <div class="publication media tag-Tamper_detection">
+        <div class="publication media tag-Tampering_detection" id="Tampering_detection_2">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[47]</font>
                 <b>Distinguishing between natural and recolored images via lateral chromatic aberration</b>
                 <br>
                 <small>Y. Yu, N. Zheng, <span style="font-weight: 700">T. Qiao*</span>, M. Xu, J. Wu</small>
@@ -507,8 +526,9 @@
 					</a>
 			</div>
         </div>
-        <div class="publication media tag-Tamper_detection">
+        <div class="publication media tag-Tampering_detection">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[46]</font>
                 <b>First step towards parameters estimation of image operator chain</b>
                 <br>
                 <small>X. Liao, Z. Huang, L. Peng, <span style="font-weight: 700">T. Qiao</span></small>
@@ -527,6 +547,7 @@
         </div>
         <div class="publication media tag-Others">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[45]</font>
                 <b>A novel file carving algorithm for docker container logs recorded by json-file logging driver</b>
                 <br>
                 <small>S. Ge, M. Xu, <span style="font-weight: 700">T. Qiao</span></small>
@@ -543,8 +564,9 @@
 					</a>
 			</div>
         </div>
-        <div class="publication media tag-Source_attribution tag-Others tag-Tamper_detection">
+        <div class="publication media tag-Source_attribution tag-Others tag-Tampering_detection">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[44]</font>
                 <b>Geographical position spoofing detection based on camera sensor fingerprint</b>
                 <br>
                 <small><span style="font-weight: 700">T. Qiao*</span>, Q. Zhao, N. Zheng, M. Xu, L. Zhang</small>
@@ -563,6 +585,7 @@
         </div>
         <div class="publication media tag-Information_hiding">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[43]</font>
                 <b>Secure reversible data hiding in encrypted images based on adaptive prediction-error labeling</b>
                 <br>
                 <small>X. Wu, <span style="font-weight: 700">T. Qiao(共同一作)</span>, M. Xu, N. Zheng</small>
@@ -580,6 +603,7 @@
         </div>
         <div class="publication media tag-Others">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[42]</font>
                 <b>Objective object segmentation visual quality evaluation based on pixel-level and region-level characteristics</b>
                 <br>
                 <small>R. Shi, J. Xiong, <span style="font-weight: 700">T. Qiao</span></small>
@@ -598,6 +622,7 @@
         </div>
         <div class="publication media tag-Others">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[41]</font>
                 <b>Individualism or Collectivism: A Reinforcement Learning Mechanism for Vaccination Decisions</b>
                 <br>
                 <small>C. Wu, <span style="font-weight: 700">T. Qiao</span>, H. Qiu, B. Shi, Q. Bao</small>
@@ -614,8 +639,9 @@
 					</a>
 			</div>
         </div>
-        <div class="publication media tag-Tamper_detection tag-Source_attribution">
+        <div class="publication media tag-Tampering_detection tag-Source_attribution">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[40]</font>
                 <b>基于深度学习的数字图像取证技术研究进展</b>
                 <br>
                 2021年《网络与信息安全学报》论文下载量Top10（中国知网数据统计）<br>
@@ -643,8 +669,9 @@
                 </h2>
             </div>
         </div>
-        <div class="publication media tag-Tamper_detection">
+        <div class="publication media tag-Tampering_detection">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[39]</font>
                 <b>JPEG quantization step estimation with coefficient histogram and spectrum analyses</b>
                 <br>
                 <small>H. Yao, H. Wei, <span style="font-weight: 700">T. Qiao</span>, C. Qin</small>
@@ -663,6 +690,7 @@
         </div>
         <div class="publication media tag-Information_hiding">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[38]</font>
                 <b>Adaptive and separable multiary reversible data hiding in encryption domain</b>
                 <br>
                 <small>M. Yu, Y. Liu, H. Sun, H. Yao, <span style="font-weight: 700">T. Qiao</span></small>
@@ -679,8 +707,9 @@
 					</a>
 			</div>
         </div>
-        <div class="publication media tag-Tamper_detection">
+        <div class="publication media tag-Tampering_detection">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[37]</font>
                 <b>Image Forgery Detection and Localization via a Reliability Fusion Map</b>
                 <br>
                 <small>H. Yao, M. Xu, <span style="font-weight: 700">T. Qiao*</span>, Y. Wu, N. Zheng</small>
@@ -699,6 +728,7 @@
         </div>
         <div class="publication media tag-Others">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[36]</font>
                 <b>Identifying WeChat message types without using traditional traffic</b>
                 <br>
                 <small>Q. Zhang, M. Xu, N. Zheng, <span style="font-weight: 700">T. Qiao</span>, Y. Wang</small>
@@ -723,8 +753,9 @@
                 </h2>
             </div>
         </div>
-        <div class="publication media tag-Information_hiding">
+        <div class="publication media tag-Information_hiding" id="Data_hiding_1">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[35]</font>
                 <b>Adaptive steganalysis based on statistical model of quantized DCT coefficients for JPEG images</b>
                 <br>
                 <small><span style="font-weight: 700">T. Qiao</span>, X. Luo, T. Wu, M. Xu，and Z. Qian</small>
@@ -743,6 +774,7 @@
         </div>
         <div class="publication media tag-Source_attribution">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[34]</font>
                 <b>Source camera identification via low dimensional PRNU features</b>
                 <br>
                 <small>Y. Zhao, N. Zheng, <span style="font-weight: 700">T. Qiao*</span> ,and M. Xu</small>
@@ -761,6 +793,7 @@
         </div>
         <div class="publication media tag-Information_hiding">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[33]</font>
                 <b>Robust Steganography by Modifying Sign of DCT Coefficients</b>
                 <br>
                 <small>Z. Zhu, N. Zheng, <span style="font-weight: 700">T. Qiao*</span>, and M. Xu</small>
@@ -779,6 +812,7 @@
         </div>
         <div class="publication media tag-Information_hiding">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[32]</font>
                 <b>Fuzzy localization of steganographic flipped bits via modification map</b>
                 <br>
                 <small>Q. Liu, <span style="font-weight: 700">T. Qiao</span>, M. Xu, and N. Zheng</small>
@@ -797,6 +831,7 @@
         </div>
         <div class="publication media tag-Source_attribution">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[31]</font>
                 <b>Designing Statistical Model-based Discriminator for Identifying Computer-generated Graphics from Natural Images</b>
                 <br>
                 <small>M. Huang, M. Xu, <span style="font-weight: 700">T. Qiao*</span>, T. Wu</small>
@@ -816,6 +851,7 @@
         </div>
         <div class="publication media tag-Others tag-Source_attribution">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[30]</font>
                 <b>Deep android malware classification with api-based feature graph</b>
                 <br>
                 <small>N. Huang, M. Xu, N. Zheng, <span style="font-weight: 700">T. Qiao</span>, K.K.R. Choo</small>
@@ -833,6 +869,7 @@
         </div>
         <div class="publication media tag-Others">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[29]</font>
                 <b>Multiple human upper bodies detection via candidate-region convolutional neural network</b>
                 <br>
                 <small>A. Zhu, T. Wang, <span style="font-weight: 700">T. Qiao</span></small>
@@ -851,6 +888,7 @@
         </div>
         <div class="publication media tag-Others tag-Source_attribution">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[28]</font>
                 <b>Hierarchical identifier: Application to user privacy eavesdropping on mobile payment app</b>
                 <br>
                 <small>Y. Wang, N. Zheng, M. Xu, <span style="font-weight: 700">T. Qiao*</span>, Q. Zhang, F. Yan, J. Xu</small>
@@ -876,8 +914,9 @@
                 </h2>
             </div>
         </div>
-        <div class="publication media tag-Tamper_detection">
+        <div class="publication media tag-Tampering_detection" id="Tampering_detection_1">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[27]</font>
                 <b>Statistical model-based detector via texture weight map: application in re-sampling authentication</b>
                 <br>
                 <small><span style="font-weight: 700">T. Qiao</span>, R. Shi, X. Luo, M. Xu, N. Zheng, and Y. Wu</small>
@@ -896,6 +935,7 @@
         </div>
         <div class="publication media tag-Source_attribution">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[26]</font>
                 <b>Identifying individual camera device from raw images</b>
                 <br>
                 <small><span style="font-weight: 700">T. Qiao*</span>, F. Retraint</small>
@@ -914,6 +954,7 @@
         </div>
         <div class="publication media tag-Source_attribution">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[25]</font>
                 <b>Robust multi-classifier for camera model identification based on convolution neural network</b>
                 <br>
                 <small>H. Yao, <span style="font-weight: 700">T. Qiao</span>, M. Xu, and N. Zheng</small>
@@ -932,6 +973,7 @@
         </div>
         <div class="publication media tag-Others">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[24]</font>
                 <b>Using machine learning for determining network robustness of multi-agent systems under attacks</b>
                 <br>
                 <small>G. Wang, M. Xu, Y. Wu, N. Zheng, J. Xu, <span style="font-weight: 700">T. Qiao</span></small>
@@ -948,8 +990,9 @@
 					</a>
 			</div>
         </div>
-        <div class="publication media tag-Others tag-Tamper_detection">
+        <div class="publication media tag-Others tag-Tampering_detection">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[23]</font>
                 <b>A location spoofing detection method for social networks (short paper)</b>
                 <br>
                 <small>C. Ding, T. Wu, <span style="font-weight: 700">T. Qiao</span>, N. Zheng, M. Xu, Y. Wu, W. Xia</small>
@@ -968,6 +1011,7 @@
         </div>
         <div class="publication media tag-Others tag-Source_attribution">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[22]</font>
                 <b>Identifying wechat red packets and fund transfers via analyzing encrypted network traffic</b>
                 <br>
                 <small>F. Yan, M. Xu, <span style="font-weight: 700">T. Qiao*</span>, T. Wu, X. Yang, N. Zheng, K.K.R. Choo</small>
@@ -984,8 +1028,9 @@
 					</a>
 			</div>
         </div>
-        <div class="publication media tag-Tamper_detection">
+        <div class="publication media tag-Tampering_detection">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[21]</font>
                 <b>Expose noise level inconsistency incorporating the inhomogeneity scoring strategy</b>
                 <br>
                 <small>H. Yao, F. Cao, Z. Tang, J. Wang, <span style="font-weight: 700">T. Qiao</span></small>
@@ -1004,6 +1049,7 @@
         </div>
         <div class="publication media tag-Others">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[20]</font>
                 <b>A novel framework of robust video watermarking based on statistical model</b>
                 <br>
                 <small>L. Li, X. Li, <span style="font-weight: 700">T. Qiao*</span>, X. Xu, S. Zhang, C. Chang</small>
@@ -1020,8 +1066,9 @@
 					</a>
 			</div>
         </div>
-        <div class="publication media tag-Tamper_detection">
+        <div class="publication media tag-Tampering_detection">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[19]</font>
                 <b>Exposing image resampling forgery by using linear parametric model</b>
                 <br>
                 <small><span style="font-weight: 700">T. Qiao*</span>, A. Zhu, F. Retraint</small>
@@ -1048,6 +1095,7 @@
         </div>
         <div class="publication media tag-Source_attribution tag-Others">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[18]</font>
                 <b>Android App Classification and Permission Usage Risk Assessment</b>
                 <br>
                 <small>Y. Shen, M. Xu, N. Zheng, J. Xu, W. Xia, Y. Wu, <span style="font-weight: 700">T. Qiao</span>, T. Yang</small>
@@ -1066,6 +1114,7 @@
         </div>
         <div class="publication media tag-Others">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[17]</font>
                 <b>A Privacy Settings Prediction Model for Textual Posts on Social Networks</b>
                 <br>
                 <small>L. Chen, M. Xu, X. Yang, N. Zheng, Y. Wu, J. Xu, <span style="font-weight: 700">T. Qiao</span>, H. Liu</small>
@@ -1084,6 +1133,7 @@
         </div>
         <div class="publication media tag-Others">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[16]</font>
                 <b>Adaptive carving method for live flv streaming</b>
                 <br>
                 <small>H. Ge, N. Zheng, L. Cai, M. Xu, <span style="font-weight: 700">T. Qiao</span>, T. Yang, J. Sun, S. Hu</small>
@@ -1102,6 +1152,7 @@
         </div>
         <div class="publication media tag-Others">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[15]</font>
                 <b>A novel file carving algorithm for National Marine Electronics Association (NMEA) logs in GPS forensics</b>
                 <br>
                 <small>K. Shi, M. Xu, H. Jin, <span style="font-weight: 700">T. Qiao</span>, X. Yang, N. Zheng, J. Xu, K.K.R. Choo</small>
@@ -1120,6 +1171,7 @@
         </div>
         <div class="publication media tag-Others">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[14]</font>
                 <b>A Novel File Carving Algorithm for EVTX Logs</b>
                 <br>
                 <small>M. Xu, J. Sun, N. Zheng, <span style="font-weight: 700">T. Qiao</span>, Y. Wu, K. Shi, H. Ge, T. Yang</small>
@@ -1136,8 +1188,9 @@
 					</a>
 			</div>
         </div>
-        <div class="publication media tag-Source_attribution">
+        <div class="publication media tag-Source_attribution" id="Source_attribution_3">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[13]</font>
                 <b>Individual camera device identification from JPEG images</b>
                 <br>
                 <small><span style="font-weight: 700">T. Qiao*</span>, F. Retraint, R. Cogranne, T.H. Thai</small>
@@ -1162,8 +1215,9 @@
                 </h2>
             </div>
         </div>
-        <div class="publication media tag-Source_attribution tag-Tamper_detection tag-Information_hiding">
+        <div class="publication media tag-Source_attribution tag-Tampering_detection tag-Information_hiding">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[12]</font>
                 <b>Statistical detection for digital image forensics</b>
                 <br>
                 <small><span style="font-weight: 700">T. Qiao</span>, Doctoral Dissertation</small>
@@ -1182,6 +1236,7 @@
         </div>
         <div class="publication media tag-Information_hiding">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[11]</font>
                 <b>Steganalysis of JSteg algorithm using hypothesis testing theory</b>
                 <br>
                 <small><span style="font-weight: 700">T. Qiao*</span>, F. Retraint, R. Cogranne, C. Zitzmann</small>
@@ -1200,6 +1255,7 @@
         </div>
         <div class="publication media tag-Source_attribution">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[10]</font>
                 <b>Source camera device identification based on raw images</b>
                 <br>
                 <small><span style="font-weight: 700">T. Qiao*</span>, F. Retraint, R. Cogranne, T.H. Thai</small>
@@ -1218,6 +1274,7 @@
         </div>
         <div class="publication media tag-Information_hiding">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[9]</font>
                 <b>Statistical detection of jsteg steganography using hypothesis testing theory</b>
                 <br>
                 <small><span style="font-weight: 700">T. Qiao</span>, C. Zitzmann, F. Retraint, R. Cogranne</small>
@@ -1236,6 +1293,7 @@
         </div>
         <div class="publication media tag-Information_hiding">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[8]</font>
                 <b>Detection of JSteg algorithm using hypothesis testing theory and a statistical model with nuisance parameters</b>
                 <br>
                 <small><span style="font-weight: 700">T. Qiao</span>, C. Ziitmann, R. Cogranne, F. Retraint</small>
@@ -1260,8 +1318,9 @@
                 </h2>
             </div>
         </div>
-        <div class="publication media tag-Tamper_detection">
+        <div class="publication media tag-Tampering_detection">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[7]</font>
                 <b>Simplified Anti-Forensics of JPEG Compression.</b>
                 <br>
                 <small>Z. Qian, <span style="font-weight: 700">T. Qiao</span></small>
@@ -1280,6 +1339,7 @@
         </div>
         <div class="publication media tag-Source_attribution">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[6]</font>
                 <b>Image authentication by statistical analysis</b>
                 <br>
                 <small><span style="font-weight: 700">T. Qiao</span>, F. Retraint, R. Cogranne</small>
@@ -1298,6 +1358,7 @@
         </div>
         <div class="publication media tag-Source_attribution">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[5]</font>
                 <b>Digital image forensics based on local energy variance properties</b>
                 <br>
                 <small><span style="font-weight: 700">T. Qiao</span>, Z. Qian, X. Zhang, W. WANG</small>
@@ -1314,8 +1375,9 @@
 					</a>
 			</div>
         </div>
-        <div class="publication media tag-Tamper_detection">
+        <div class="publication media tag-Tampering_detection">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[4]</font>
                 <b>Image Passive Authentication and Robust Detection of Copy-move Forgeries</b>
                 <br>
                 <small>H. Yao, Y. Chen, Y. Zhao, Y. Chen, <span style="font-weight: 700">T. Qiao</span></small>
@@ -1334,6 +1396,7 @@
         </div>
         <div class="publication media tag-Others">
             <div class="media-body" style="width:825px;display:inline-block">
+			<font>[3]</font>
                 <b>An edge detection method in DCT domain</b>
                 <br>
                 <small>Z. Qian, W. Wang, <span style="font-weight: 700">T. Qiao</span></small>
@@ -1350,8 +1413,9 @@
 					</a>
 			</div>
         </div>
-        <div class="publication media tag-Tamper_detection">
+        <div class="publication media tag-Tampering_detection">
             <div class="media-body" style="width:825px;display:inline-block">
+				<font>[2]</font>
                 <b>Detecting copy-move forgery using non-negative matrix factorization</b>
                 <br>
                 <small>H. Yao, <span style="font-weight: 700">T. Qiao</span>, Z. Tang, Y. Zhao, H. Mao</small>
@@ -1370,6 +1434,7 @@
         </div>
         <div class="publication media tag-Information_hiding">
             <div class="media-body" style="width:825px;display:inline-block">
+				<font>[1]</font>
                 <b>Image self-embedding with large-area restoration capability</b>
                 <br>
                 <small>Z. Qian, <span style="font-weight: 700">T. Qiao</span></small>
@@ -1387,7 +1452,7 @@
 			</div>
         </div>
 
-        最后修改时间:2023-07-15 18:11:54
+        最后修改时间:2023-07-17 9:49:27
     </div>
 </div>
 </body>
