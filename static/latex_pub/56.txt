@@ -1,0 +1,8 @@
+@inproceedings{shi2022encrypted,
+  title={Encrypted Image Visual Security Index via Non-Local Recognizable Degree Evaluation},
+  author={Shi, Ran and Xiong, Jian and Qiao, Tong},
+  booktitle={ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={2994--2998},
+  year={2022},
+  organization={IEEE}
+}

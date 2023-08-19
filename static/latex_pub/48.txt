@@ -1,0 +1,9 @@
+@article{du2021towards,
+  title={Towards face presentation attack detection based on residual color texture representation},
+  author={Du, Yuting and Qiao, Tong and Xu, Ming and Zheng, Ning},
+  journal={Security and Communication Networks},
+  volume={2021},
+  pages={1--16},
+  year={2021},
+  publisher={Hindawi Limited}
+}

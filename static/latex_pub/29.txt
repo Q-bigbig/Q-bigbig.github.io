@@ -1,0 +1,9 @@
+@article{zhu2019multiple,
+  title={Multiple human upper bodies detection via candidate-region convolutional neural network},
+  author={Zhu, Aichun and Wang, Tian and Qiao, Tong},
+  journal={Multimedia Tools and Applications},
+  volume={78},
+  pages={16077--16096},
+  year={2019},
+  publisher={Springer}
+}

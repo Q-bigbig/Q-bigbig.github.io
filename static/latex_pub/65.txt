@@ -1,0 +1,9 @@
+@article{qiao2023novel,
+  title={A novel model watermarking for protecting generative adversarial network},
+  author={Qiao, Tong and Ma, Yuyan and Zheng, Ning and Wu, Hanzhou and Chen, Yanli and Xu, Ming and Luo, Xiangyang},
+  journal={Computers \& Security},
+  volume={127},
+  pages={103102},
+  year={2023},
+  publisher={Elsevier}
+}

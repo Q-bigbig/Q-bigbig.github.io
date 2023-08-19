@@ -1,0 +1,9 @@
+@article{乔通2021基于深度学习的数字图像取证技术研究进展,
+  title={基于深度学习的数字图像取证技术研究进展},
+  author={乔通 and 姚宏伟 and 潘彬民 and 徐明 and 陈艳利},
+  journal={网络与信息安全学报},
+  volume={7},
+  number={5},
+  pages={13--28},
+  year={2021}
+}

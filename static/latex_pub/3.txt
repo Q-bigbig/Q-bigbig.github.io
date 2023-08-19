@@ -1,0 +1,9 @@
+@article{qian2012edge,
+  title={An edge detection method in DCT domain},
+  author={Qian, Zhenxing and Wang, Wenwen and Qiao, Tong},
+  journal={Procedia Engineering},
+  volume={29},
+  pages={344--348},
+  year={2012},
+  publisher={Elsevier}
+}

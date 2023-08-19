@@ -1,0 +1,9 @@
+@article{chen2022image,
+  title={Image splicing forgery detection using simplified generalized noise model},
+  author={Chen, Yanli and Retraint, Florent and Qiao, Tong},
+  journal={Signal Processing: Image Communication},
+  volume={107},
+  pages={116785},
+  year={2022},
+  publisher={Elsevier}
+}

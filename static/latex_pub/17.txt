@@ -1,0 +1,8 @@
+@inproceedings{chen2018privacy,
+  title={A privacy settings prediction model for textual posts on social networks},
+  author={Chen, Lijun and Xu, Ming and Yang, Xue and Zheng, Ning and Wu, Yiming and Xu, Jian and Qiao, Tong and Liu, Hongbin},
+  booktitle={Collaborative Computing: Networking, Applications and Worksharing: 13th International Conference, CollaborateCom 2017, Edinburgh, UK, December 11--13, 2017, Proceedings 13},
+  pages={578--588},
+  year={2018},
+  organization={Springer}
+}

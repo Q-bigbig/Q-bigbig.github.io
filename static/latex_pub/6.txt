@@ -1,0 +1,8 @@
+@inproceedings{qiao2013image,
+  title={Image authentication by statistical analysis},
+  author={Qiao, Tong and Retraint, Florent and Cogranne, R{\'e}mi},
+  booktitle={21st European Signal Processing Conference (EUSIPCO 2013)},
+  pages={1--5},
+  year={2013},
+  organization={IEEE}
+}

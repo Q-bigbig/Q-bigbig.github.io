@@ -1,0 +1,8 @@
+@inproceedings{wang2018using,
+  title={Using machine learning for determining network robustness of multi-agent systems under attacks},
+  author={Wang, Guang and Xu, Ming and Wu, Yiming and Zheng, Ning and Xu, Jian and Qiao, Tong},
+  booktitle={PRICAI 2018: Trends in Artificial Intelligence: 15th Pacific Rim International Conference on Artificial Intelligence, Nanjing, China, August 28--31, 2018, Proceedings, Part II 15},
+  pages={491--498},
+  year={2018},
+  organization={Springer}
+}

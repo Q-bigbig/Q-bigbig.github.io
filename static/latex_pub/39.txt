@@ -1,0 +1,9 @@
+@article{yao2020jpeg,
+  title={JPEG quantization step estimation with coefficient histogram and spectrum analyses},
+  author={Yao, Heng and Wei, Hongbin and Qiao, Tong and Qin, Chuan},
+  journal={Journal of Visual Communication and Image Representation},
+  volume={69},
+  pages={102795},
+  year={2020},
+  publisher={Elsevier}
+}

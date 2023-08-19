@@ -1,0 +1,9 @@
+@article{chen2022efficient,
+  title={Efficient Privacy-Preserving Forensic Method for Camera Model Identification},
+  author={Chen, Yanli and Qiao, Tong and Retraint, Florent and Hu, Gengran},
+  journal={IEEE Transactions on Information Forensics and Security},
+  volume={17},
+  pages={2378--2393},
+  year={2022},
+  publisher={IEEE}
+}

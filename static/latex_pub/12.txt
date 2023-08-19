@@ -1,0 +1,6 @@
+@phdthesis{qiao2016statistical,
+  title={Statistical detection for digital image forensics},
+  author={Qiao, Tong},
+  year={2016},
+  school={Universit{\'e} de Technologie de Troyes}
+}

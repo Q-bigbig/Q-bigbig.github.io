@@ -1,0 +1,8 @@
+@inproceedings{yao2011detecting,
+  title={Detecting copy-move forgery using non-negative matrix factorization},
+  author={Yao, Heng and Qiao, Tong and Tang, Zhenjun and Zhao, Yan and Mao, Hualing},
+  booktitle={2011 Third International Conference on Multimedia Information Networking and Security},
+  pages={591--594},
+  year={2011},
+  organization={IEEE}
+}

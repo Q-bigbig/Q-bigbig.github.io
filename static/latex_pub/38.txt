@@ -1,0 +1,9 @@
+@article{yu2020adaptive,
+  title={Adaptive and separable multiary reversible data hiding in encryption domain},
+  author={Yu, Mingji and Liu, Yuchen and Sun, Hu and Yao, Heng and Qiao, Tong},
+  journal={EURASIP Journal on Image and Video Processing},
+  volume={2020},
+  pages={1--15},
+  year={2020},
+  publisher={Springer}
+}

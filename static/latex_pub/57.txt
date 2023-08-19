@@ -1,0 +1,10 @@
+@article{shi2022objective,
+  title={Objective object segmentation visual quality evaluation: Quality measure and pooling method},
+  author={Shi, Ran and Ma, Jing and Ngan, King Ngi and Xiong, Jian and Qiao, Tong},
+  journal={ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM)},
+  volume={18},
+  number={3},
+  pages={1--19},
+  year={2022},
+  publisher={ACM New York, NY}
+}

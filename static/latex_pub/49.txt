@@ -1,0 +1,9 @@
+@article{qiao2021robust,
+  title={Robust steganography resisting JPEG compression by improving selection of cover element},
+  author={Qiao, Tong and Wang, Shuai and Luo, Xiangyang and Zhu, Zhiqiang},
+  journal={Signal Processing},
+  volume={183},
+  pages={108048},
+  year={2021},
+  publisher={Elsevier}
+}

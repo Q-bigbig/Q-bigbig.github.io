@@ -1,0 +1,10 @@
+@article{qiao2018statistical,
+  title={Statistical model-based detector via texture weight map: Application in re-sampling authentication},
+  author={Qiao, Tong and Shi, Ran and Luo, Xiangyang and Xu, Ming and Zheng, Ning and Wu, Yiming},
+  journal={IEEE Transactions on Multimedia},
+  volume={21},
+  number={5},
+  pages={1077--1092},
+  year={2018},
+  publisher={IEEE}
+}

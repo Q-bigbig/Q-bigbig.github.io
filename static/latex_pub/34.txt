@@ -1,0 +1,9 @@
+@article{zhao2019source,
+  title={Source camera identification via low dimensional PRNU features},
+  author={Zhao, Yihua and Zheng, Ning and Qiao, Tong and Xu, Ming},
+  journal={Multimedia Tools and Applications},
+  volume={78},
+  pages={8247--8269},
+  year={2019},
+  publisher={Springer}
+}

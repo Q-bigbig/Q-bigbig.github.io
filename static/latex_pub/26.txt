@@ -1,0 +1,9 @@
+@article{qiao2018identifying,
+  title={Identifying individual camera device from raw images},
+  author={Qiao, Tong and Retraint, Florent},
+  journal={IEEE Access},
+  volume={6},
+  pages={78038--78054},
+  year={2018},
+  publisher={IEEE}
+}

@@ -1,0 +1,9 @@
+@article{qiao2015steganalysis,
+  title={Steganalysis of JSteg algorithm using hypothesis testing theory},
+  author={Qiao, Tong and Retraint, Florent and Cogranne, R{\'e}mi and Zitzmann, Cathel},
+  journal={EURASIP Journal on Information Security},
+  volume={2015},
+  pages={1--16},
+  year={2015},
+  publisher={Springer}
+}

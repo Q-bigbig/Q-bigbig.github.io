@@ -1,0 +1,10 @@
+@article{li2022transmission,
+  title={Transmission Removal from a Single Glass Scene and Its Application in Photographer Identification},
+  author={Li, Zhen and Yao, Heng and Shi, Ran and Qiao, Tong and Qin, Chuan},
+  journal={Applied Sciences},
+  volume={12},
+  number={23},
+  pages={12484},
+  year={2022},
+  publisher={MDPI}
+}

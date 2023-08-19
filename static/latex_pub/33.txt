@@ -1,0 +1,9 @@
+@article{zhu2019robust,
+  title={Robust steganography by modifying sign of DCT coefficients},
+  author={Zhu, Zhiqiang and Zheng, Ning and Qiao, Tong and Xu, Ming},
+  journal={IEEE Access},
+  volume={7},
+  pages={168613--168628},
+  year={2019},
+  publisher={IEEE}
+}

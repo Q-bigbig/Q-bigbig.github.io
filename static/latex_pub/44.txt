@@ -1,0 +1,9 @@
+@article{qiao2021geographical,
+  title={Geographical position spoofing detection based on camera sensor fingerprint},
+  author={Qiao, Tong and Zhao, Qianru and Zheng, Ning and Xu, Ming and Zhang, Li},
+  journal={Journal of Visual Communication and Image Representation},
+  volume={81},
+  pages={103320},
+  year={2021},
+  publisher={Elsevier}
+}

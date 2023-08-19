@@ -1,0 +1,10 @@
+@article{xia2022deepfake,
+  title={DeepFake video detection based on MesoNet with preprocessing module},
+  author={Xia, Zhiming and Qiao, Tong and Xu, Ming and Wu, Xiaoshuai and Han, Li and Chen, Yunzhi},
+  journal={Symmetry},
+  volume={14},
+  number={5},
+  pages={939},
+  year={2022},
+  publisher={MDPI}
+}

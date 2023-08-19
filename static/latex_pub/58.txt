@@ -1,0 +1,6 @@
+@article{武晓帅2022图像空域可逆信息隐藏研究进展,
+  title={图像空域可逆信息隐藏研究进展},
+  author={武晓帅 and 徐明 and 乔通 and 潘彬民 and 廖鑫},
+  year={2022},
+  publisher={中国图象图形学报}
+}

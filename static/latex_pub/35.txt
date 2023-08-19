@@ -1,0 +1,10 @@
+@article{qiao2019adaptive,
+  title={Adaptive steganalysis based on statistical model of quantized DCT coefficients for JPEG images},
+  author={Qiao, Tong and Luo, Xiangyang and Wu, Ting and Xu, Ming and Qian, Zhenxing},
+  journal={IEEE Transactions on Dependable and Secure Computing},
+  volume={18},
+  number={6},
+  pages={2736--2751},
+  year={2019},
+  publisher={IEEE}
+}

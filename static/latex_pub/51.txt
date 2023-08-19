@@ -1,0 +1,9 @@
+@article{qiao2022classifying,
+  title={Classifying between computer generated and natural images: An empirical study from RAW to JPEG format},
+  author={Qiao, Tong and Luo, Xiangyang and Yao, Hongwei and Shi, Ran},
+  journal={Journal of Visual Communication and Image Representation},
+  volume={85},
+  pages={103506},
+  year={2022},
+  publisher={Elsevier}
+}

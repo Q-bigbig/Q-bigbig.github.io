@@ -1,0 +1,9 @@
+@article{qiao2017individual,
+  title={Individual camera device identification from JPEG images},
+  author={Qiao, Tong and Retraint, Florent and Cogranne, R{\'e}mi and Thai, Thanh Hai},
+  journal={Signal Processing: Image Communication},
+  volume={52},
+  pages={74--86},
+  year={2017},
+  publisher={Elsevier}
+}

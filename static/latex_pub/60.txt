@@ -1,0 +1,7 @@
+@article{zhang2022unsupervised,
+  title={Unsupervised learning-based framework for deepfake video detection},
+  author={Zhang, Li and Qiao, Tong and Xu, Ming and Zheng, Ning and Xie, Shichuang},
+  journal={IEEE Transactions on Multimedia},
+  year={2022},
+  publisher={IEEE}
+}

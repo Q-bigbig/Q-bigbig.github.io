@@ -1,0 +1,9 @@
+@article{xia2022towards,
+  title={Towards DeepFake video forensics based on facial textural disparities in multi-color channels},
+  author={Xia, Zhiming and Qiao, Tong and Xu, Ming and Zheng, Ning and Xie, Shichuang},
+  journal={Information Sciences},
+  volume={607},
+  pages={654--669},
+  year={2022},
+  publisher={Elsevier}
+}

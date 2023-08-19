@@ -1,0 +1,8 @@
+@article{pan2022novel,
+  title={Novel Hidden Bit Location Method towards JPEG Steganography},
+  author={Pan, Binmin and Qiao, Tong and Li, Jiaming and Chen, Yiyang and Yang, Chunfang and others},
+  journal={Security and Communication Networks},
+  volume={2022},
+  year={2022},
+  publisher={Hindawi}
+}

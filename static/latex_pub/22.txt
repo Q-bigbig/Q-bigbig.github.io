@@ -1,0 +1,8 @@
+@inproceedings{yan2018identifying,
+  title={Identifying wechat red packets and fund transfers via analyzing encrypted network traffic},
+  author={Yan, Feipeng and Xu, Ming and Qiao, Tong and Wu, Ting and Yang, Xue and Zheng, Ning and Choo, Kim-Kwang Raymond},
+  booktitle={2018 17th IEEE International Conference on Trust, Security and Privacy in Computing and Communications/12th IEEE International Conference on Big Data Science and Engineering (TrustCom/BigDataSE)},
+  pages={1426--1432},
+  year={2018},
+  organization={IEEE}
+}

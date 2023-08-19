@@ -1,0 +1,9 @@
+@article{liao2021first,
+  title={First step towards parameters estimation of image operator chain},
+  author={Liao, Xin and Huang, Zihang and Peng, Lin and Qiao, Tong},
+  journal={Information Sciences},
+  volume={575},
+  pages={231--247},
+  year={2021},
+  publisher={Elsevier}
+}

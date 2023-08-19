@@ -1,0 +1,10 @@
+@article{wu2021individualism,
+  title={Individualism or collectivism: A reinforcement learning mechanism for vaccination decisions},
+  author={Wu, Chaohao and Qiao, Tong and Qiu, Hongjun and Shi, Benyun and Bao, Qing},
+  journal={Information},
+  volume={12},
+  number={2},
+  pages={66},
+  year={2021},
+  publisher={MDPI}
+}

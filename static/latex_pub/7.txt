@@ -1,0 +1,9 @@
+@article{qian2013simplified,
+  title={Simplified Anti-Forensics of JPEG Compression.},
+  author={Qian, Zhenxing and Qiao, Tong},
+  journal={J. Comput.},
+  volume={8},
+  number={10},
+  pages={2483--2488},
+  year={2013}
+}

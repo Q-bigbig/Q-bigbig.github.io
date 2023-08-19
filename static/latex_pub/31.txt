@@ -1,0 +1,9 @@
+@article{huang2019designing,
+  title={Designing Statistical Model-based Discriminator for Identifying Computer-generated Graphics from Natural Images.},
+  author={Huang, Mingying and Xu, Ming and Qiao, Tong and Wu, Ting and Zheng, Ning},
+  journal={J. Univers. Comput. Sci.},
+  volume={25},
+  number={9},
+  pages={1151--0},
+  year={2019}
+}

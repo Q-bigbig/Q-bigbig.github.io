@@ -1,0 +1,10 @@
+@article{wang2019hierarchical,
+  title={Hierarchical identifier: application to user privacy eavesdropping on mobile payment app},
+  author={Wang, Yaru and Zheng, Ning and Xu, Ming and Qiao, Tong and Zhang, Qiang and Yan, Feipeng and Xu, Jian},
+  journal={Sensors},
+  volume={19},
+  number={14},
+  pages={3052},
+  year={2019},
+  publisher={MDPI}
+}

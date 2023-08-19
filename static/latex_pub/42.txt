@@ -1,0 +1,7 @@
+@inproceedings{shi2021objective,
+  title={Objective object segmentation visual quality evaluation based on pixel-level and region-level characteristics},
+  author={Shi, Ran and Xiong, Jian and Qiao, Tong},
+  booktitle={Proceedings of the 2nd ACM International Conference on Multimedia in Asia},
+  pages={1--7},
+  year={2021}
+}

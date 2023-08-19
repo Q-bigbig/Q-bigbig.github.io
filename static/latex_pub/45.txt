@@ -1,0 +1,9 @@
+@article{ge2021novel,
+  title={A novel file carving algorithm for docker container logs recorded by json-file logging driver},
+  author={Ge, Song and Xu, Ming and Qiao, Tong and Zheng, Ning},
+  journal={Forensic Science International: Digital Investigation},
+  volume={39},
+  pages={301272},
+  year={2021},
+  publisher={Elsevier}
+}

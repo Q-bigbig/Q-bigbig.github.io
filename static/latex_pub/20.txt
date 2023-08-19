@@ -1,0 +1,8 @@
+@inproceedings{li2018novel,
+  title={A novel framework of robust video watermarking based on statistical model},
+  author={Li, Li and Li, Xin and Qiao, Tong and Xu, Xiaoyu and Zhang, Shanqing and Chang, Chin-Chen},
+  booktitle={Cloud Computing and Security: 4th International Conference, ICCCS 2018, Haikou, China, June 8--10, 2018, Revised Selected Papers, Part IV 4},
+  pages={160--172},
+  year={2018},
+  organization={Springer}
+}

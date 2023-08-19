@@ -1,0 +1,8 @@
+@inproceedings{shen2018android,
+  title={Android app classification and permission usage risk assessment},
+  author={Shen, Yidong and Xu, Ming and Zheng, Ning and Xu, Jian and Xia, Wenjing and Wu, Yiming and Qiao, Tong and Yang, Tao},
+  booktitle={Collaborative Computing: Networking, Applications and Worksharing: 13th International Conference, CollaborateCom 2017, Edinburgh, UK, December 11--13, 2017, Proceedings 13},
+  pages={567--577},
+  year={2018},
+  organization={Springer}
+}

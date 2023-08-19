@@ -1,0 +1,8 @@
+@inproceedings{qiao2015source,
+  title={Source camera device identification based on raw images},
+  author={Qiao, Tong and Retraint, Florent and Cogranne, R{\'e}mi and Thai, Thanh Hai},
+  booktitle={2015 IEEE international conference on image processing (ICIP)},
+  pages={3812--3816},
+  year={2015},
+  organization={IEEE}
+}

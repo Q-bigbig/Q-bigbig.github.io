@@ -1,0 +1,8 @@
+@inproceedings{chen2022detecting,
+  title={Detecting spliced image based on simplified statistical model},
+  author={Chen, Yanli and Retraint, Florent and Qiao, Tong},
+  booktitle={2022 14th International Conference on Computer Research and Development (ICCRD)},
+  pages={220--224},
+  year={2022},
+  organization={IEEE}
+}

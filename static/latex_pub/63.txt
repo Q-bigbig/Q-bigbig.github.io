@@ -1,0 +1,7 @@
+@article{qiao2022fgdnet,
+  title={Fgdnet: Fine-grained detection network towards face anti-spoofing},
+  author={Qiao, Tong and Wu, Jiasheng and Zheng, Ning and Xu, Ming and Luo, Xiangyang},
+  journal={IEEE Transactions on Multimedia},
+  year={2022},
+  publisher={IEEE}
+}

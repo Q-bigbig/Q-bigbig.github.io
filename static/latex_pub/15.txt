@@ -1,0 +1,9 @@
+@article{shi2017novel,
+  title={A novel file carving algorithm for National Marine Electronics Association (NMEA) logs in GPS forensics},
+  author={Shi, Kai and Xu, Ming and Jin, Haoxia and Qiao, Tong and Yang, Xue and Zheng, Ning and Xu, Jian and Choo, Kim-Kwang Raymond},
+  journal={Digital Investigation},
+  volume={23},
+  pages={11--21},
+  year={2017},
+  publisher={Elsevier}
+}

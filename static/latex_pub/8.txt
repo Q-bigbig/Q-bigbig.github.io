@@ -1,0 +1,7 @@
+@inproceedings{qiao2014detection,
+  title={Detection of jsteg algorithm using hypothesis testing theory and a statistical model with nuisance parameters},
+  author={Qiao, Tong and Ziitmann, Cathel and Cogranne, R{\'e}mi and Retraint, Florent},
+  booktitle={Proceedings of the 2nd ACM workshop on Information hiding and multimedia security},
+  pages={3--13},
+  year={2014}
+}

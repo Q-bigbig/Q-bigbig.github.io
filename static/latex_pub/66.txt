@@ -1,0 +1,7 @@
+@article{qiao2023csc,
+  title={CSC-Net: Cross-color Spatial Co-occurrence Matrix Network for Detecting Synthesized Fake Images},
+  author={Qiao, Tong and Chen, Yuxing and Zhou, Xiaofei and Shi, Ran and Shao, Hang and Shen, Kunye and Luo, Xiangyang},
+  journal={IEEE Transactions on Cognitive and Developmental Systems},
+  year={2023},
+  publisher={IEEE}
+}

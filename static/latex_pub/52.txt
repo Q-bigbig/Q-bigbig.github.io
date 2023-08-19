@@ -1,0 +1,8 @@
+@article{qiao2022toward,
+  title={Toward steganographic payload location via neighboring weight algorithm},
+  author={Qiao, Tong and Luo, Xiangyang and Pan, Binmin and Chen, Yuxing and Wu, Xiaoshuai and others},
+  journal={Security and Communication Networks},
+  volume={2022},
+  year={2022},
+  publisher={Hindawi}
+}

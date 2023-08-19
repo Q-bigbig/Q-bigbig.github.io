@@ -1,0 +1,8 @@
+@inproceedings{ding2019location,
+  title={A location spoofing detection method for social networks (short paper)},
+  author={Ding, Chaoping and Wu, Ting and Qiao, Tong and Zheng, Ning and Xu, Ming and Wu, Yiming and Xia, Wenjing},
+  booktitle={Collaborative Computing: Networking, Applications and Worksharing: 14th EAI International Conference, CollaborateCom 2018, Shanghai, China, December 1-3, 2018, Proceedings 14},
+  pages={138--150},
+  year={2019},
+  organization={Springer}
+}

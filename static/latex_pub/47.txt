@@ -1,0 +1,9 @@
+@article{yu2021distinguishing,
+  title={Distinguishing between natural and recolored images via lateral chromatic aberration},
+  author={Yu, Yangxin and Zheng, Ning and Qiao, Tong and Xu, Ming and Wu, Jiasheng},
+  journal={Journal of Visual Communication and Image Representation},
+  volume={80},
+  pages={103295},
+  year={2021},
+  publisher={Elsevier}
+}

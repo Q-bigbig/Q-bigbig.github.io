@@ -1,0 +1,8 @@
+@inproceedings{qiao2014statistical,
+  title={Statistical detection of jsteg steganography using hypothesis testing theory},
+  author={Qiao, Tong and Zitzmann, Cathel and Retraint, Florent and Cogranne, R{\'e}mi},
+  booktitle={2014 IEEE International Conference on Image Processing (ICIP)},
+  pages={5517--5521},
+  year={2014},
+  organization={IEEE}
+}

@@ -1,0 +1,8 @@
+@inproceedings{qian2010image,
+  title={Image self-embedding with large-area restoration capability},
+  author={Qian, Zhenxing and Qiao, Tong},
+  booktitle={2010 International Conference on Multimedia Information Networking and Security},
+  pages={649--652},
+  year={2010},
+  organization={IEEE}
+}

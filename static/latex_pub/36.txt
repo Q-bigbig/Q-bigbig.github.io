@@ -1,0 +1,10 @@
+@article{zhang2019identifying,
+  title={Identifying WeChat message types without using traditional traffic},
+  author={Zhang, Qiang and Xu, Ming and Zheng, Ning and Qiao, Tong and Wang, Yaru},
+  journal={Information},
+  volume={11},
+  number={1},
+  pages={18},
+  year={2019},
+  publisher={MDPI}
+}

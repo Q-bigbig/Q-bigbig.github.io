@@ -1,0 +1,8 @@
+@inproceedings{ge2018adaptive,
+  title={Adaptive carving method for live flv streaming},
+  author={Ge, Haidong and Zheng, Ning and Cai, Lin and Xu, Ming and Qiao, Tong and Yang, Tao and Sun, Jinkai and Hu, Sudeng},
+  booktitle={Collaborative Computing: Networking, Applications and Worksharing: 13th International Conference, CollaborateCom 2017, Edinburgh, UK, December 11--13, 2017, Proceedings 13},
+  pages={554--566},
+  year={2018},
+  organization={Springer}
+}

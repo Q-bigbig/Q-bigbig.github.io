@@ -1,0 +1,10 @@
+@article{yao2020image,
+  title={Image forgery detection and localization via a reliability fusion map},
+  author={Yao, Hongwei and Xu, Ming and Qiao, Tong and Wu, Yiming and Zheng, Ning},
+  journal={Sensors},
+  volume={20},
+  number={22},
+  pages={6668},
+  year={2020},
+  publisher={MDPI}
+}

@@ -1,0 +1,8 @@
+@inproceedings{xu2018novel,
+  title={A Novel File Carving Algorithm for EVTX Logs},
+  author={Xu, Ming and Sun, Jinkai and Zheng, Ning and Qiao, Tong and Wu, Yiming and Shi, Kai and Ge, Haidong and Yang, Tao},
+  booktitle={Digital Forensics and Cyber Crime: 9th International Conference, ICDF2C 2017, Prague, Czech Republic, October 9-11, 2017, Proceedings 9},
+  pages={97--105},
+  year={2018},
+  organization={Springer}
+}
