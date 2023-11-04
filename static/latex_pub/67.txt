@@ -1,0 +1,10 @@
+@article{qiao2023robust,
+  title={Robust steganography in practical communication: a comparative study},
+  author={Qiao, Tong and Xu, Shengwang and Wang, Shuai and Wu, Xiaoshuai and Liu, Bo and Zheng, Ning and Xu, Ming and Pan, Binmin},
+  journal={EURASIP Journal on Image and Video Processing},
+  volume={2023},
+  number={1},
+  pages={1--19},
+  year={2023},
+  publisher={SpringerOpen}
+}
