@@ -1,0 +1,10 @@
+@INPROCEEDINGS{10317186,
+  author={Xie, Shichuang and Wu, Jiasheng and Chen, Yanli and Han, Meng and Wu, Ting and Qiao, Tong},
+  booktitle={2023 Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)}, 
+  title={Fine-grained Face Anti-Spoofing based on Recursive Self-Attention and Multi-Scale Fusion}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1435-1442},
+  doi={10.1109/APSIPAASC58517.2023.10317186}
+}
