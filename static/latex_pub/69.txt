@@ -1,0 +1,10 @@
+@ARTICLE{10382699,
+  author={Xu, Shengwang and Qiao, Tong and Xu, Ming and Wang, Wei and Zheng, Ning},
+  journal={IEEE Signal Processing Letters}, 
+  title={Robust Adversarial Watermark Defending against GAN Synthesization Attack}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-5},
+  doi={10.1109/LSP.2024.3350983}
+}
