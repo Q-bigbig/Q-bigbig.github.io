@@ -1,0 +1,9 @@
+@ARTICLE{10411047,
+  author={Qiao, Tong and Xie, Shichuang and Chen, Yanli and Retraint, Florent and Luo, Xiangyang},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={Fully Unsupervised Deepfake Video Detection via Enhanced Contrastive Learning}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-18},
+  doi={10.1109/TPAMI.2024.3356814}}
