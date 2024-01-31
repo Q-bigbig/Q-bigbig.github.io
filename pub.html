@@ -1,253 +1,274 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>
-        publications </title>
-    <link rel="stylesheet" href="./bootstrap.min.css">
-    <link rel="stylesheet" href="./main.css">
-    <!--    <script type="text/javascript" async src="js/analytics.js"></script>-->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>
+			publications </title>
+		<link rel="stylesheet" href="./bootstrap.min.css">
+		<link rel="stylesheet" href="./main.css">
+		<!--    <script type="text/javascript" async src="js/analytics.js"></script>-->
 
-    <style>
-        .container {
-            max-width: 1000px;
-        }
-
-        .fa-reply {
-            position: absolute;
-            right: 50px;
-            top: 30px;
-
-        }
-
-    </style>
-
-</head>
-
-<body>
-
-<script type="text/javascript" src="./jquery.min.js"></script>
-<script>
-	function checkboxOnclick(checkbox) {
-	
-		var checkMap = new Map()
-		
-		AI_security = $("#AI_security")
-		Source_attribution = $("#Source_attribution")
-		Tampering_detection = $("#Tampering_detection")
-		Information_hiding = $("#Information_hiding")
-		Others = $("#Others")
-		
-		checkMap.set("AI_security",AI_security.prop("checked"))
-		checkMap.set("Source_attribution",Source_attribution.prop("checked"))
-		checkMap.set("Tampering_detection",Tampering_detection.prop("checked"))
-		checkMap.set("Information_hiding",Information_hiding.prop("checked"))
-		checkMap.set("Others",Others.prop("checked"))
-		console.log(checkMap)
-		
-		var iterator = checkMap[Symbol.iterator]()
-		for (var item of iterator) {
-			var ele_tag = ""
-			ele_tag = '.tag-' + item[0]
-			$(ele_tag).prop("hidden",true)
-		}
-		
-		var iterator = checkMap[Symbol.iterator]()
-		for (var item of iterator) {
-			console.log(item)
-			console.log(item[0])
-			console.log(item[1])
-			if (item[1] == false) {
-				console.log("这个隐藏")
+		<style>
+			.container {
+				max-width: 1000px;
 			}
-			else {
-				var ele_tag = ""
-				ele_tag ='.tag-' + item[0]
-				$(ele_tag).prop("hidden", false)
+
+			.fa-reply {
+				position: absolute;
+				right: 50px;
+				top: 30px;
+
 			}
-		}
-	}
-</script>
+		</style>
 
-<div class="box container ">
+	</head>
 
-    <div class="content">
-        <div class="container">
-            <div class="col-sm-12">
-                <div class="panel panel-body">
-                    <h1><b>Publications</b></h1>
-                    <div>
-                        <a href="./index.html">
-                            <i class="fa fa-reply" aria-hidden="true">返回</i></a></div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="col-sm-12">
-                <h5 id="tag">
-		    &nbsp;|&nbsp;
-                    <b><a href="#2024" style="color: #1367a7;">2024</a></b>
-                    &nbsp;|&nbsp;
-                    <b><a href="#2023" style="color: #1367a7;">2023</a></b>
-                    &nbsp;|&nbsp;
-                    <b><a href="#2022" style="color: #1367a7;">2022</a></b>
-                    &nbsp;|&nbsp;
-                    <b><a href="#2021" style="color: #1367a7;">2021</a></b>
-                    &nbsp;|&nbsp;
-                    <b><a href="#2020" style="color: #1367a7;">2020</a></b>
-                    &nbsp;|&nbsp;
-                    <b><a href="#2019" style="color: #1367a7;">2019</a></b>
-                    &nbsp;|&nbsp;
-                    <b><a href="#2018" style="color: #1367a7;">2018</a></b>
-                    &nbsp;|&nbsp;
-                    <b><a href="#2017" style="color: #1367a7;">2017</a></b>
-                    &nbsp;|&nbsp;                    
-                    <b><a href="#2014-2016" style="color: #1367a7;">2014-2016</a></b>
-                    &nbsp;|&nbsp;                    
-                    <b><a href="#2010-2013" style="color: #1367a7;">2010-2013</a></b>
-                    &nbsp;|&nbsp;
-                </h5>
-            </div>
-        </div>
-        <div class="container" id="year">
-            <div class="col-sm-12">
-                <h2 style="float:left">
-                    <font size="4">*Corresponding author（通讯作者）</font>
-                </h2>
-            </div>
-        </div>
-		
-		<div style="padding-left:20px">
-		<label class="col-xs-4" style="color: #1367a7;"><input id="AI_security" name="AI security" type="checkbox" value="AI_security" checked="checked" onclick="checkboxOnclick(this)">AI security（人工智能安全）</label>
-			<label class="col-xs-4" style="color: #1367a7"><input id="Source_attribution" name="Source attribution" type="checkbox" value="Source_attribution" checked="checked" onclick="checkboxOnclick(this)">Source attribution（来源取证）</label>
-			<label class="col-xs-4" style="color: #1367a7;"><input id="Tampering_detection" name="Tampering detection" type="checkbox" value="Tampering_detection" checked="checked" onclick="checkboxOnclick(this)">Tampering detection（篡改检测）</label>
-			<label class="col-xs-4" style="color: #1367a7;"><input id="Information_hiding" name="Information hiding" type="checkbox" value="Information_hiding" checked="checked" onclick="checkboxOnclick(this)">Data hiding（信息隐藏）</label>
-			
-			<label class="col-xs-4" style="color: #1367a7;"><input id="Others" name="Others" type="checkbox" value="Others" checked="checked" onclick="checkboxOnclick(this)">Others（其他）</label>
-			<label class="col-xs-4" style="color: #1367a7"><a href="./pub.html">&nbsp;&nbsp;&nbsp;Full List</a></label>
-		</div>
+	<body>
 
-	<div class="container" id="year">
-			<div class="col-sm-12"><div class="panel panel-body"></div></div>
-            <div class="col-sm-12">
-                <h2>
-                    <b id="2024">● 2024</b>
-                </h2>
-            </div>
-        </div>
+		<script type="text/javascript" src="./jquery.min.js"></script>
+		<script>
+			function checkboxOnclick(checkbox) {
 
-	<div class="publication media tag-AI_security tag-Tampering_detection">
-            <div class="media-body" style="width:765px;display:inline-block">
-				<font>[70]</font>
-                <b>Fully Unsupervised Deepfake Video Detection via Enhanced Contrastive Learning</b>
-                <br>
-                <small><span style="font-weight: 700">T. Qiao</span>, S. Xie, Y. Chen, F. Retraint, X. Luo</small>
-				<br>
-				<small>IEEE Transactions on Pattern Analysis and Machine Intelligence</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
-					<a class="btn btn-default" href="./static/latex_pub/70.txt" target="_blank">
-						<b>CITE</b>
-					</a>
-					<a class="btn btn-default" href="https://github.com/bestalllen/Unsupervised_DF_Detection" target="_blank">
-						<b>CODE</b>
-					</a>
-					<a class="btn btn-default" href="https://doi.org/10.1109/TPAMI.2024.3356814" target="_blank">
-						<b>DOI</b>
-					</a>
+				var checkMap = new Map()
+
+				AI_security = $("#AI_security")
+				Source_attribution = $("#Source_attribution")
+				Tampering_detection = $("#Tampering_detection")
+				Information_hiding = $("#Information_hiding")
+				Others = $("#Others")
+
+				checkMap.set("AI_security", AI_security.prop("checked"))
+				checkMap.set("Source_attribution", Source_attribution.prop("checked"))
+				checkMap.set("Tampering_detection", Tampering_detection.prop("checked"))
+				checkMap.set("Information_hiding", Information_hiding.prop("checked"))
+				checkMap.set("Others", Others.prop("checked"))
+				console.log(checkMap)
+
+				var iterator = checkMap[Symbol.iterator]()
+				for (var item of iterator) {
+					var ele_tag = ""
+					ele_tag = '.tag-' + item[0]
+					$(ele_tag).prop("hidden", true)
+				}
+
+				var iterator = checkMap[Symbol.iterator]()
+				for (var item of iterator) {
+					console.log(item)
+					console.log(item[0])
+					console.log(item[1])
+					if (item[1] == false) {
+						console.log("这个隐藏")
+					} else {
+						var ele_tag = ""
+						ele_tag = '.tag-' + item[0]
+						$(ele_tag).prop("hidden", false)
+					}
+				}
+			}
+		</script>
+
+		<div class="box container ">
+
+			<div class="content">
+				<div class="container">
+					<div class="col-sm-12">
+						<div class="panel panel-body">
+							<h1><b>Publications</b></h1>
+							<div>
+								<a href="./index.html">
+									<i class="fa fa-reply" aria-hidden="true">返回</i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="col-sm-12">
+						<h5 id="tag">
+							&nbsp;|&nbsp;
+							<b><a href="#2024" style="color: #1367a7;">2024</a></b>
+							&nbsp;|&nbsp;
+							<b><a href="#2023" style="color: #1367a7;">2023</a></b>
+							&nbsp;|&nbsp;
+							<b><a href="#2022" style="color: #1367a7;">2022</a></b>
+							&nbsp;|&nbsp;
+							<b><a href="#2021" style="color: #1367a7;">2021</a></b>
+							&nbsp;|&nbsp;
+							<b><a href="#2020" style="color: #1367a7;">2020</a></b>
+							&nbsp;|&nbsp;
+							<b><a href="#2019" style="color: #1367a7;">2019</a></b>
+							&nbsp;|&nbsp;
+							<b><a href="#2018" style="color: #1367a7;">2018</a></b>
+							&nbsp;|&nbsp;
+							<b><a href="#2017" style="color: #1367a7;">2017</a></b>
+							&nbsp;|&nbsp;
+							<b><a href="#2014-2016" style="color: #1367a7;">2014-2016</a></b>
+							&nbsp;|&nbsp;
+							<b><a href="#2010-2013" style="color: #1367a7;">2010-2013</a></b>
+							&nbsp;|&nbsp;
+						</h5>
+					</div>
+				</div>
+				<div class="container" id="year">
+					<div class="col-sm-12">
+						<h2 style="float:left">
+							<font size="4">*Corresponding author（通讯作者）</font>
+						</h2>
+					</div>
+				</div>
+
+				<div style="padding-left:20px">
+					<label class="col-xs-4" style="color: #1367a7;"><input id="AI_security" name="AI security"
+							type="checkbox" value="AI_security" checked="checked" onclick="checkboxOnclick(this)">AI
+						security（人工智能安全）</label>
+					<label class="col-xs-4" style="color: #1367a7"><input id="Source_attribution"
+							name="Source attribution" type="checkbox" value="Source_attribution" checked="checked"
+							onclick="checkboxOnclick(this)">Source attribution（来源取证）</label>
+					<label class="col-xs-4" style="color: #1367a7;"><input id="Tampering_detection"
+							name="Tampering detection" type="checkbox" value="Tampering_detection" checked="checked"
+							onclick="checkboxOnclick(this)">Tampering detection（篡改检测）</label>
+					<label class="col-xs-4" style="color: #1367a7;"><input id="Information_hiding"
+							name="Information hiding" type="checkbox" value="Information_hiding" checked="checked"
+							onclick="checkboxOnclick(this)">Data hiding（信息隐藏）</label>
+
+					<label class="col-xs-4" style="color: #1367a7;"><input id="Others" name="Others" type="checkbox"
+							value="Others" checked="checked" onclick="checkboxOnclick(this)">Others（其他）</label>
+					<label class="col-xs-4" style="color: #1367a7"><a href="./pub.html">&nbsp;&nbsp;&nbsp;Full
+							List</a></label>
+				</div>
+
+				<div class="container" id="year">
+					<div class="col-sm-12">
+						<div class="panel panel-body"></div>
+					</div>
+					<div class="col-sm-12">
+						<h2>
+							<b id="2024">● 2024</b>
+						</h2>
+					</div>
+				</div>
+
+				<div class="publication media tag-AI_security tag-Tampering_detection" id="AI_security_1">
+					<div class="media-body" style="width:765px;display:inline-block">
+						<font>[70]</font>
+						<b>Fully Unsupervised Deepfake Video Detection via Enhanced Contrastive Learning</b>
+						<br>
+						<small><span style="font-weight: 700">T. Qiao</span>, S. Xie, Y. Chen, F. Retraint, X.
+							Luo</small>
+						<br>
+						<small>IEEE Transactions on Pattern Analysis and Machine Intelligence</small>
+					</div>
+					<div style="padding-top:30px;width:190px;display:inline-block">
+						<a class="btn btn-default" href="./static/latex_pub/70.txt" target="_blank">
+							<b>CITE</b>
+						</a>
+						<a class="btn btn-default" href="https://github.com/bestalllen/Unsupervised_DF_Detection"
+							target="_blank">
+							<b>CODE</b>
+						</a>
+						<a class="btn btn-default" href="https://doi.org/10.1109/TPAMI.2024.3356814" target="_blank">
+							<b>DOI</b>
+						</a>
+					</div>
+				</div>
+
+				<div class="publication media tag-AI_security" id="AI_security_2">
+					<div class="media-body" style="width:765px;display:inline-block">
+						<font>[69]</font>
+						<b>Robust Adversarial Watermark Defending against GAN Synthesization Attack</b>
+						<br>
+						<small>S. Xu, <span style="font-weight: 700">T. Qiao*</span>, M. Xu, W. Wang, N. Zheng</small>
+						<br>
+						<small>IEEE Signal Processing Letters</small>
+					</div>
+					<div style="padding-top:30px;width:190px;display:inline-block">
+						<a class="btn btn-default" href="./static/latex_pub/69.txt" target="_blank">
+							<b>CITE</b>
+						</a>
+						<a class="btn btn-default" href="https://github.com/masunozomi/RawDagsa" target="_blank">
+							<b>CODE</b>
+						</a>
+						<a class="btn btn-default" href="https://doi.org/10.1109/LSP.2024.3350983" target="_blank">
+							<b>DOI</b>
+						</a>
+					</div>
+				</div>
 			</div>
-        </div>
 
-	<div class="publication media tag-AI_security">
-            <div class="media-body" style="width:765px;display:inline-block">
-				<font>[69]</font>
-                <b>Robust Adversarial Watermark Defending against GAN Synthesization Attack</b>
-                <br>
-                <small>S. Xu, <span style="font-weight: 700">T. Qiao*</span>, M. Xu, W. Wang, N. Zheng</small>
-				<br>
-				<small>IEEE Signal Processing Letters</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
-					<a class="btn btn-default" href="./static/latex_pub/69.txt" target="_blank">
-						<b>CITE</b>
-					</a>
-					<a class="btn btn-default" href="https://github.com/masunozomi/RawDagsa" target="_blank">
-						<b>CODE</b>
-					</a>
-					<a class="btn btn-default" href="https://doi.org/10.1109/LSP.2024.3350983" target="_blank">
-						<b>DOI</b>
-					</a>
+			<div class="container" id="year">
+				<div class="col-sm-12">
+					<div class="panel panel-body"></div>
+				</div>
+				<div class="col-sm-12">
+					<h2>
+						<b id="2023">● 2023</b>
+					</h2>
+				</div>
 			</div>
-        </div>
-        </div>
-	    
-        <div class="container" id="year">
-			<div class="col-sm-12"><div class="panel panel-body"></div></div>
-            <div class="col-sm-12">
-                <h2>
-                    <b id="2023">● 2023</b>
-                </h2>
-            </div>
-        </div>
 
-	<div class="publication media tag-AI_security">
-            <div class="media-body" style="width:765px;display:inline-block">
-				<font>[68]</font>
-                <b>Fine-grained Face Anti-Spoofing based on Recursive Self-Attention and Multi-Scale Fusion</b>
-                <br>
-                <small>S. Xie, J. Wu, Y. Chen, M. Han, T. Wu, <span style="font-weight: 700">T. Qiao*</span></small>
-				<br>
-				<small>2023 Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-AI_security">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[68]</font>
+					<b>Fine-grained Face Anti-Spoofing based on Recursive Self-Attention and Multi-Scale Fusion</b>
+					<br>
+					<small>S. Xie, J. Wu, Y. Chen, M. Han, T. Wu, <span style="font-weight: 700">T. Qiao*</span></small>
+					<br>
+					<small>2023 Asia Pacific Signal and Information Processing Association Annual Summit and Conference
+						(APSIPA ASC)</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/68.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://doi.org/10.1109/APSIPAASC58517.2023.10317186" target="_blank">
+					<a class="btn btn-default" href="https://doi.org/10.1109/APSIPAASC58517.2023.10317186"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
 
-	<div class="publication media tag-Information_hiding">
-            <div class="media-body" style="width:765px;display:inline-block">
-				<font>[67]</font>
-                <b>Robust steganography in practical communication: a comparative study</b>
-                <br>
-                <small><span style="font-weight: 700">T. Qiao</span>, S. Xu, S. Wang, X. Wu, B. Liu, N. Zheng, M. Xu, B. Pan</small>
-				<br>
-				<small>EURASIP Journal on Image and Video Processing volume, 2023.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Information_hiding">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[67]</font>
+					<b>Robust steganography in practical communication: a comparative study</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao</span>, S. Xu, S. Wang, X. Wu, B. Liu, N. Zheng, M.
+						Xu, B. Pan</small>
+					<br>
+					<small>EURASIP Journal on Image and Video Processing volume, 2023.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/67.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://jivp-eurasipjournals.springeropen.com/articles/10.1186/s13640-023-00615-y" target="_blank">
+					<a class="btn btn-default"
+						href="https://jivp-eurasipjournals.springeropen.com/articles/10.1186/s13640-023-00615-y"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-	    
-	    
-        <div class="publication media tag-AI_security tag-Source_attribution" id="AI_security_3">
-            <div class="media-body" style="width:765px;display:inline-block">
-				<font>[66]</font>
-                <b>CSC-Net: Cross-color Spatial Co-occurrence Matrix Network for Detecting Synthesized Fake Images</b>
-                <br>
-                <small><span style="font-weight: 700">T. Qiao</span>, Y. Chen, X. Zhou, R. Shi, H. Shao, K. Shen, X. Luo</small>
-				<br>
-				<small>IEEE Transactions on Cognitive and Developmental Systems, 2023.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+
+
+			<div class="publication media tag-AI_security tag-Source_attribution" id="AI_security_5">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[66]</font>
+					<b>CSC-Net: Cross-color Spatial Co-occurrence Matrix Network for Detecting Synthesized Fake
+						Images</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao</span>, Y. Chen, X. Zhou, R. Shi, H. Shao, K. Shen, X.
+						Luo</small>
+					<br>
+					<small>IEEE Transactions on Cognitive and Developmental Systems, 2023.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/66.txt" target="_blank">
 						<b>CITE</b>
 					</a>
@@ -257,50 +278,56 @@
 					<a class="btn btn-default" href="https://ieeexplore.ieee.org/document/10121791" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-AI_security">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[65]</font>
-                <b>A Novel Model Watermarking for Protecting Generative Adversarial Network</b>
-                <br>
-               <small><span style="font-weight: 700">T. Qiao</span>, Y. Ma, N. Zheng, H. Wu, Y. Chen, M. Xu, X. Luo</small>
-			   <br>
-			   <small>Computers & Security, 2023: 103102.</small>
-			   
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-AI_security">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[65]</font>
+					<b>A Novel Model Watermarking for Protecting Generative Adversarial Network</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao</span>, Y. Ma, N. Zheng, H. Wu, Y. Chen, M. Xu, X.
+						Luo</small>
+					<br>
+					<small>Computers & Security, 2023: 103102.</small>
+
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/65.txt" target="_blank">
 						<b>CITE</b>
 					</a>
-					<a class="btn btn-default" href="https://github.com/myyhikali/GAN-Watermark/tree/master" target="_blank">
+					<a class="btn btn-default" href="https://github.com/myyhikali/GAN-Watermark/tree/master"
+						target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://www.sciencedirect.com/science/article/pii/S0167404823000123" target="_blank">
+					<a class="btn btn-default"
+						href="https://www.sciencedirect.com/science/article/pii/S0167404823000123" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        
-        
-        <div class="container" id="year">
-		<div class="col-sm-12"><div class="panel panel-body"></div></div>
-            <div class="col-sm-12">
-                <h2>
-                    <b id="2022">● 2022</b>
-                </h2>
-            </div>
-        </div>
-        <div class="publication media tag-Others">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[64]</font>
-                <b>Transmission Removal from a Single Glass Scene and Its Application in Photographer Identification</b>
-                <br>
-                <small>Z. Li, H. Yao, R. Shi, <span style="font-weight: 700">T. Qiao</span>, C. Qin</small>
-				<br>
-				<small>Applied Sciences, 2022, 12(23): 12484</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+
+
+			<div class="container" id="year">
+				<div class="col-sm-12">
+					<div class="panel panel-body"></div>
+				</div>
+				<div class="col-sm-12">
+					<h2>
+						<b id="2022">● 2022</b>
+					</h2>
+				</div>
+			</div>
+			<div class="publication media tag-Others">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[64]</font>
+					<b>Transmission Removal from a Single Glass Scene and Its Application in Photographer
+						Identification</b>
+					<br>
+					<small>Z. Li, H. Yao, R. Shi, <span style="font-weight: 700">T. Qiao</span>, C. Qin</small>
+					<br>
+					<small>Applied Sciences, 2022, 12(23): 12484</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/64.txt" target="_blank">
 						<b>CITE</b>
 					</a>
@@ -310,148 +337,157 @@
 					<a class="btn btn-default" href="https://www.mdpi.com/2076-3417/12/23/12484" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-AI_security tag-Source_attribution" id="AI_security_2">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[63]</font>
-                <b>FGDNet: Fine-Grained Detection Network Towards Face Anti-Spoofing</b>
-                <br>
-               <small><span style="font-weight: 700">T. Qiao</span>, J. Wu, N. Zheng, M. Xu, X. Luo</small>
-			   <br>
-			   <small>IEEE Transactions on Multimedia, 2022.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-AI_security tag-Source_attribution" id="AI_security_4">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[63]</font>
+					<b>FGDNet: Fine-Grained Detection Network Towards Face Anti-Spoofing</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao</span>, J. Wu, N. Zheng, M. Xu, X. Luo</small>
+					<br>
+					<small>IEEE Transactions on Multimedia, 2022.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/63.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="https://github.com/rookieaaa/FGDNet" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/9946402" target="_blank">
+					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/9946402"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Source_attribution" id="Source_attribution_1">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[62]</font>
-                <b>Efficient Privacy-Preserving Forensic Method for Camera Model Identification</b>
-                <br>
-                <small>Y. Chen, <span style="font-weight: 700">T. Qiao*</span>, F. Retraint, G. Hu</small>
-				<br>
-				<small>IEEE Transactions on Information Forensics and Security, 2022, 17: 2378-2393.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Source_attribution" id="Source_attribution_1">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[62]</font>
+					<b>Efficient Privacy-Preserving Forensic Method for Camera Model Identification</b>
+					<br>
+					<small>Y. Chen, <span style="font-weight: 700">T. Qiao*</span>, F. Retraint, G. Hu</small>
+					<br>
+					<small>IEEE Transactions on Information Forensics and Security, 2022, 17: 2378-2393.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/62.txt" target="_blank">
 						<b>CITE</b>
 					</a>
-					<a class="btn btn-default" href="https://github.com/Q-bigbig/Efficient_Privacy-Preserving_Forensic_Method_for_Camera_Model_Identification/tree/main" target="_blank">
+					<a class="btn btn-default"
+						href="https://github.com/Q-bigbig/Efficient_Privacy-Preserving_Forensic_Method_for_Camera_Model_Identification/tree/main"
+						target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/9804767" target="_blank">
+					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/9804767"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Tampering_detection" id="Tampering_detection_3">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[61]</font>
-                <b>Image splicing forgery detection using simplified generalized noise model</b>
-                <br>
-                <small>Y. Chen, F. Retraint, <span style="font-weight: 700">T. Qiao*</span></small>
-				<br>
-				<small>Signal Processing: Image Communication, 2022, 107: 116785.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Tampering_detection" id="Tampering_detection_3">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[61]</font>
+					<b>Image splicing forgery detection using simplified generalized noise model</b>
+					<br>
+					<small>Y. Chen, F. Retraint, <span style="font-weight: 700">T. Qiao*</span></small>
+					<br>
+					<small>Signal Processing: Image Communication, 2022, 107: 116785.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/61.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://www.sciencedirect.com/science/article/abs/pii/S0923596522000972" target="_blank">
+					<a class="btn btn-default"
+						href="https://www.sciencedirect.com/science/article/abs/pii/S0923596522000972" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-AI_security tag-Source_attribution" id="AI_security_1">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[60]</font>
-                <b>Unsupervised Learning-Based Framework for Deepfake Video Detection</b>
-                <br>
-                <small>L. Zhang, <span style="font-weight: 700">T. Qiao*</span>, M. Xu, N. Zheng, S. Xie
-				</small>
-				<br>
-				<small>IEEE Transactions on Multimedia, 2022.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-AI_security tag-Source_attribution" id="AI_security_3">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[60]</font>
+					<b>Unsupervised Learning-Based Framework for Deepfake Video Detection</b>
+					<br>
+					<small>L. Zhang, <span style="font-weight: 700">T. Qiao*</span>, M. Xu, N. Zheng, S. Xie
+					</small>
+					<br>
+					<small>IEEE Transactions on Multimedia, 2022.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/60.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/9795231" target="_blank">
+					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/9795231"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-AI_security" id="AI_security_4">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[59]</font>
-                <b>Towards DeepFake Video Forensics based on Facial Textural Disparities in Multi-color Channels</b>
-                <br>
-               <small>Z. Xia, <span style="font-weight: 700">T. Qiao*</span>, M. Xu, N. Zheng, S. Xie</small>
-				<br>
-				<small>
-			   Information Sciences, 2022, 607: 654-669.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-AI_security" id="AI_security_6">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[59]</font>
+					<b>Towards DeepFake Video Forensics based on Facial Textural Disparities in Multi-color Channels</b>
+					<br>
+					<small>Z. Xia, <span style="font-weight: 700">T. Qiao*</span>, M. Xu, N. Zheng, S. Xie</small>
+					<br>
+					<small>
+						Information Sciences, 2022, 607: 654-669.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/59.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://www.sciencedirect.com/science/article/abs/pii/S0020025522005771" target="_blank">
+					<a class="btn btn-default"
+						href="https://www.sciencedirect.com/science/article/abs/pii/S0020025522005771" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Information_hiding" id="Data_hiding_4">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[58]</font>
-                <b>图像空域可逆信息隐藏研究进展</b>
-                <br>
-                <small>武晓帅, 徐明, <span style="font-weight: 700">乔通*</span>, 潘彬民, 廖鑫</small>
-				<br>
-				<small>
-				中国图象图形学报，2022， 27(1)：25。</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Information_hiding" id="Data_hiding_4">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[58]</font>
+					<b>图像空域可逆信息隐藏研究进展</b>
+					<br>
+					<small>武晓帅, 徐明, <span style="font-weight: 700">乔通*</span>, 潘彬民, 廖鑫</small>
+					<br>
+					<small>
+						中国图象图形学报，2022， 27(1)：25。</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/58.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="http://www.cjig.cn/jig/ch/reader/view_abstract.aspx?file_no=20220108" target="_blank">
+					<a class="btn btn-default"
+						href="http://www.cjig.cn/jig/ch/reader/view_abstract.aspx?file_no=20220108" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Others">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[57]</font>
-                <b>Objective Object Segmentation Visual Quality Evaluation: Quality Measure and Pooling Method</b>
-                <br>
-               <small>R. Shi,J. Ma, K. N. Ngan, J. Xiong, <span style="font-weight: 700">T. Qiao*</span></small>
-				<br>
-				<small>
-			   ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM), 2022, 18(3): 1-19.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Others">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[57]</font>
+					<b>Objective Object Segmentation Visual Quality Evaluation: Quality Measure and Pooling Method</b>
+					<br>
+					<small>R. Shi,J. Ma, K. N. Ngan, J. Xiong, <span style="font-weight: 700">T. Qiao*</span></small>
+					<br>
+					<small>
+						ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM), 2022, 18(3):
+						1-19.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/57.txt" target="_blank">
 						<b>CITE</b>
 					</a>
@@ -461,63 +497,66 @@
 					<a class="btn btn-default" href="https://dl.acm.org/doi/fullHtml/10.1145/3491229" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Others">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[56]</font>
-                <b>Encrypted Image Visual Security Index via Non-Local Recognizable Degree Evaluation</b>
-                <br>
-               <small>R Shi, J Xiong, <span style="font-weight: 700">T. Qiao</span></small>
-				<br>
-				<small>
-			   ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2022: 2994-2998.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Others">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[56]</font>
+					<b>Encrypted Image Visual Security Index via Non-Local Recognizable Degree Evaluation</b>
+					<br>
+					<small>R Shi, J Xiong, <span style="font-weight: 700">T. Qiao</span></small>
+					<br>
+					<small>
+						ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing
+						(ICASSP), 2022: 2994-2998.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/56.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/9746918" target="_blank">
+					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/9746918"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Information_hiding">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[55]</font>
-                <b>Novel Hidden Bit Location Method towards JPEG Steganography</b>  
-                <br>
-               <small>B Pan, <span style="font-weight: 700">T. Qiao*</span>, J Li, Y Chen, C Yang</small>
-				<br>
-				<small>
-			   Security and Communication Networks 2022: 8230263.</small>
-            </div> 
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Information_hiding">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[55]</font>
+					<b>Novel Hidden Bit Location Method towards JPEG Steganography</b>
+					<br>
+					<small>B Pan, <span style="font-weight: 700">T. Qiao*</span>, J Li, Y Chen, C Yang</small>
+					<br>
+					<small>
+						Security and Communication Networks 2022: 8230263.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/55.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://www.hindawi.com/journals/scn/2022/8230263/" target="_blank">
+					<a class="btn btn-default" href="https://www.hindawi.com/journals/scn/2022/8230263/"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-AI_security">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[54]</font>
-                <b>Deepfake Video Detection Based on MesoNet with Preprocessing Module</b>
-                <br>
-               <small>Z Xia, <span style="font-weight: 700">T. Qiao*</span>, M Xu, X Wu, L Han, Y Chen</small>
-				<br>
-				<small>
-			   Symmetry 14 (5), 939.</small>
-            </div> 
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-AI_security">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[54]</font>
+					<b>Deepfake Video Detection Based on MesoNet with Preprocessing Module</b>
+					<br>
+					<small>Z Xia, <span style="font-weight: 700">T. Qiao*</span>, M Xu, X Wu, L Han, Y Chen</small>
+					<br>
+					<small>
+						Symmetry 14 (5), 939.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/54.txt" target="_blank">
 						<b>CITE</b>
 					</a>
@@ -527,288 +566,309 @@
 					<a class="btn btn-default" href="https://www.mdpi.com/2073-8994/14/5/939" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>                            
-        <div class="publication media tag-Information_hiding" id="Data_hiding_3">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[53]</font>
-                <b>Sign steganography revisited with robust domain selection</b>
-                <br>
-                <small>X. Wu, <span style="font-weight: 700">T. Qiao*</span>, Y. Chen, M. Xu, N. Zheng, X. Luo</small>
-				<br>
-				<small>
-				Signal Processing, 2022: 108522.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Information_hiding" id="Data_hiding_3">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[53]</font>
+					<b>Sign steganography revisited with robust domain selection</b>
+					<br>
+					<small>X. Wu, <span style="font-weight: 700">T. Qiao*</span>, Y. Chen, M. Xu, N. Zheng, X.
+						Luo</small>
+					<br>
+					<small>
+						Signal Processing, 2022: 108522.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/53.txt" target="_blank">
 						<b>CITE</b>
 					</a>
-					<a class="btn btn-default" href="https://github.com/sh1newu/Sign_steganography_revisited" target="_blank">
+					<a class="btn btn-default" href="https://github.com/sh1newu/Sign_steganography_revisited"
+						target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://www.sciencedirect.com/science/article/pii/S016516842200069X" target="_blank">
+					<a class="btn btn-default"
+						href="https://www.sciencedirect.com/science/article/pii/S016516842200069X" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Information_hiding">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[52]</font>
-                <b>Toward Steganographic Payload Location via Neighboring Weight Algorithm</b>
-                <br>
-                <small><span style="font-weight: 700">T. Qiao</span>, X. Luo, B. Pan, Y. Chen, X. Wu</small>
-				<br>
-				<small>
-				Security and Communication Networks,2022: 1400708.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Information_hiding">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[52]</font>
+					<b>Toward Steganographic Payload Location via Neighboring Weight Algorithm</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao</span>, X. Luo, B. Pan, Y. Chen, X. Wu</small>
+					<br>
+					<small>
+						Security and Communication Networks,2022: 1400708.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/52.txt" target="_blank">
 						<b>CITE</b>
 					</a>
-					<a class="btn btn-default" href="https://github.com/sh1newu/Sign_steganography_revisited" target="_blank">
+					<a class="btn btn-default" href="https://github.com/sh1newu/Sign_steganography_revisited"
+						target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://www.hindawi.com/journals/scn/2022/1400708/" target="_blank">
+					<a class="btn btn-default" href="https://www.hindawi.com/journals/scn/2022/1400708/"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Source_attribution" id="Source_attribution_2">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[51]</font>
-                <b>Classifying between computer generated and natural images: An empirical study from RAW to JPEG format</b>
-                <br>
-                <small><span style="font-weight: 700">T. Qiao</span>, X. Luo, H. Yao, R. Shi</small>
-				<br>
-				<small>
-				Journal of Visual Communication and Image Representation, 2022, 85: 103506.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Source_attribution" id="Source_attribution_2">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[51]</font>
+					<b>Classifying between computer generated and natural images: An empirical study from RAW to JPEG
+						format</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao</span>, X. Luo, H. Yao, R. Shi</small>
+					<br>
+					<small>
+						Journal of Visual Communication and Image Representation, 2022, 85: 103506.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/51.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://www.sciencedirect.com/science/article/pii/S1047320322000578" target="_blank">
+					<a class="btn btn-default"
+						href="https://www.sciencedirect.com/science/article/pii/S1047320322000578" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Tampering_detection">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[50]</font>
-                <b>Detecting Spliced Image Based on Simplified Statistical Model</b>
-                <br>
-                <small>Y. Chen, F. Retraint, <span style="font-weight: 700">T. Qiao</span></small>
-				<br>
-				<small>
-				2022 14th International Conference on Computer Research and Development (ICCRD), 2022: 220-224.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Tampering_detection">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[50]</font>
+					<b>Detecting Spliced Image Based on Simplified Statistical Model</b>
+					<br>
+					<small>Y. Chen, F. Retraint, <span style="font-weight: 700">T. Qiao</span></small>
+					<br>
+					<small>
+						2022 14th International Conference on Computer Research and Development (ICCRD), 2022:
+						220-224.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/50.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/9730342" target="_blank">
+					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/9730342"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="container" id="year">
-			<div class="col-sm-12"><div class="panel panel-body"></div></div>
-            <div class="col-sm-12">
-                <h2>
-                    <b id="2021">● 2021</b>
-                </h2>
-            </div>
-        </div>
-        <div class="publication media tag-Information_hiding" id="Data_hiding_2">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[49]</font>
-                <b>Robust Steganography Resisting JPEG Compression By Improving Selection of Cover Element</b>
-                <br>
-                <small><span style="font-weight: 700">T. Qiao</span>, S. Wang, X. Luo, Z. Zhu</small>
-				<br>
-				<small>
-				Signal Processing , 2021, 183: 108048.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="container" id="year">
+				<div class="col-sm-12">
+					<div class="panel panel-body"></div>
+				</div>
+				<div class="col-sm-12">
+					<h2>
+						<b id="2021">● 2021</b>
+					</h2>
+				</div>
+			</div>
+			<div class="publication media tag-Information_hiding" id="Data_hiding_2">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[49]</font>
+					<b>Robust Steganography Resisting JPEG Compression By Improving Selection of Cover Element</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao</span>, S. Wang, X. Luo, Z. Zhu</small>
+					<br>
+					<small>
+						Signal Processing , 2021, 183: 108048.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/49.txt" target="_blank">
 						<b>CITE</b>
 					</a>
-					<a class="btn btn-default" href="https://github.com/sh1newu/Sign_steganography_revisited" target="_blank">
+					<a class="btn btn-default" href="https://github.com/sh1newu/Sign_steganography_revisited"
+						target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://www.sciencedirect.com/science/article/pii/S0165168421000876" target="_blank">
+					<a class="btn btn-default"
+						href="https://www.sciencedirect.com/science/article/pii/S0165168421000876" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-AI_security tag-Source_attribution">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[48]</font>
-                <b>Towards Face Presentation Attack Detection Based on Residual Color Texture Representation</b>
-                <br>
-                <small>Y. Du, <span style="font-weight: 700">T. Qiao</span>（共同一作）, M. Xu, N. Zheng</small>
-				<br>
-				<small>Security and Communication Networks, 2021, 1-16.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-AI_security tag-Source_attribution">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[48]</font>
+					<b>Towards Face Presentation Attack Detection Based on Residual Color Texture Representation</b>
+					<br>
+					<small>Y. Du, <span style="font-weight: 700">T. Qiao</span>（共同一作）, M. Xu, N. Zheng</small>
+					<br>
+					<small>Security and Communication Networks, 2021, 1-16.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/48.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://www.hindawi.com/journals/scn/2021/6652727/" target="_blank">
+					<a class="btn btn-default" href="https://www.hindawi.com/journals/scn/2021/6652727/"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Tampering_detection" id="Tampering_detection_2">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[47]</font>
-                <b>Distinguishing between natural and recolored images via lateral chromatic aberration</b>
-                <br>
-                <small>Y. Yu, N. Zheng, <span style="font-weight: 700">T. Qiao*</span>, M. Xu, J. Wu</small>
-				<br>
-				<small>Journal of Visual Communication and Image Representation 80, 103295.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Tampering_detection" id="Tampering_detection_2">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[47]</font>
+					<b>Distinguishing between natural and recolored images via lateral chromatic aberration</b>
+					<br>
+					<small>Y. Yu, N. Zheng, <span style="font-weight: 700">T. Qiao*</span>, M. Xu, J. Wu</small>
+					<br>
+					<small>Journal of Visual Communication and Image Representation 80, 103295.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/47.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="YYX.zip" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://www.sciencedirect.com/science/article/pii/S1047320321001954" target="_blank">
+					<a class="btn btn-default"
+						href="https://www.sciencedirect.com/science/article/pii/S1047320321001954" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Tampering_detection">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[46]</font>
-                <b>First step towards parameters estimation of image operator chain</b>
-                <br>
-                <small>X. Liao, Z. Huang, L. Peng, <span style="font-weight: 700">T. Qiao</span></small>
-				<br>
-				<small>
-				Information Sciences 575, 231-247.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Tampering_detection">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[46]</font>
+					<b>First step towards parameters estimation of image operator chain</b>
+					<br>
+					<small>X. Liao, Z. Huang, L. Peng, <span style="font-weight: 700">T. Qiao</span></small>
+					<br>
+					<small>
+						Information Sciences 575, 231-247.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/46.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://www.sciencedirect.com/science/article/abs/pii/S0020025521006368" target="_blank">
+					<a class="btn btn-default"
+						href="https://www.sciencedirect.com/science/article/abs/pii/S0020025521006368" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Others">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[45]</font>
-                <b>A novel file carving algorithm for docker container logs recorded by json-file logging driver</b>
-                <br>
-                <small>S. Ge, M. Xu, <span style="font-weight: 700">T. Qiao</span></small>
-				<br>
-				<small>
-				N. Zheng, Forensic Science International: Digital Investigation 39, 301272.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Others">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[45]</font>
+					<b>A novel file carving algorithm for docker container logs recorded by json-file logging driver</b>
+					<br>
+					<small>S. Ge, M. Xu, <span style="font-weight: 700">T. Qiao</span></small>
+					<br>
+					<small>
+						N. Zheng, Forensic Science International: Digital Investigation 39, 301272.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/45.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://www.sciencedirect.com/science/article/pii/S2666281721001906" target="_blank">
+					<a class="btn btn-default"
+						href="https://www.sciencedirect.com/science/article/pii/S2666281721001906" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Source_attribution tag-Others tag-Tampering_detection">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[44]</font>
-                <b>Geographical position spoofing detection based on camera sensor fingerprint</b>
-                <br>
-                <small><span style="font-weight: 700">T. Qiao*</span>, Q. Zhao, N. Zheng, M. Xu, L. Zhang</small>
-				<br>
-				<small>
-				Journal of Visual Communication and Image Representation 81, 103320.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Source_attribution tag-Others tag-Tampering_detection">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[44]</font>
+					<b>Geographical position spoofing detection based on camera sensor fingerprint</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao*</span>, Q. Zhao, N. Zheng, M. Xu, L. Zhang</small>
+					<br>
+					<small>
+						Journal of Visual Communication and Image Representation 81, 103320.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/44.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://www.sciencedirect.com/science/article/pii/S104732032100211X" target="_blank">
+					<a class="btn btn-default"
+						href="https://www.sciencedirect.com/science/article/pii/S104732032100211X" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Information_hiding">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[43]</font>
-                <b>Secure reversible data hiding in encrypted images based on adaptive prediction-error labeling</b>
-                <br>
-                <small>X. Wu, <span style="font-weight: 700">T. Qiao(共同一作)</span>, M. Xu, N. Zheng</small>
-				<br>
-				<small>Signal Processing, 108200.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Information_hiding">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[43]</font>
+					<b>Secure reversible data hiding in encrypted images based on adaptive prediction-error labeling</b>
+					<br>
+					<small>X. Wu, <span style="font-weight: 700">T. Qiao(共同一作)</span>, M. Xu, N. Zheng</small>
+					<br>
+					<small>Signal Processing, 108200.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/43.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://www.sciencedirect.com/science/article/pii/S0165168421002383" target="_blank">
+					<a class="btn btn-default"
+						href="https://www.sciencedirect.com/science/article/pii/S0165168421002383" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Others">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[42]</font>
-                <b>Objective object segmentation visual quality evaluation based on pixel-level and region-level characteristics</b>
-                <br>
-                <small>R. Shi, J. Xiong, <span style="font-weight: 700">T. Qiao</span></small>
-				<br>
-				<small>
-				Proceedings of the 2nd ACM International Conference on Multimedia in Asia, 1-7.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Others">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[42]</font>
+					<b>Objective object segmentation visual quality evaluation based on pixel-level and region-level
+						characteristics</b>
+					<br>
+					<small>R. Shi, J. Xiong, <span style="font-weight: 700">T. Qiao</span></small>
+					<br>
+					<small>
+						Proceedings of the 2nd ACM International Conference on Multimedia in Asia, 1-7.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/42.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://dl.acm.org/doi/abs/10.1145/3444685.3446305" target="_blank">
+					<a class="btn btn-default" href="https://dl.acm.org/doi/abs/10.1145/3444685.3446305"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Others">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[41]</font>
-                <b>Individualism or Collectivism: A Reinforcement Learning Mechanism for Vaccination Decisions</b>
-                <br>
-                <small>C. Wu, <span style="font-weight: 700">T. Qiao</span>, H. Qiu, B. Shi, Q. Bao</small>
-				<br>
-				<small>
-				Information 12 (2), 66.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Others">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[41]</font>
+					<b>Individualism or Collectivism: A Reinforcement Learning Mechanism for Vaccination Decisions</b>
+					<br>
+					<small>C. Wu, <span style="font-weight: 700">T. Qiao</span>, H. Qiu, B. Shi, Q. Bao</small>
+					<br>
+					<small>
+						Information 12 (2), 66.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/41.txt" target="_blank">
 						<b>CITE</b>
 					</a>
@@ -818,96 +878,103 @@
 					<a class="btn btn-default" href="https://www.mdpi.com/2078-2489/12/2/66" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Tampering_detection tag-Source_attribution">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[40]</font>
-                <b>基于深度学习的数字图像取证技术研究进展</b>
-                <br>
-                2021年《网络与信息安全学报》论文下载量Top10（中国知网数据统计）<br>
-                <small><span style="font-weight: 700">乔通</span>, 姚宏伟, 潘彬民, 徐明, 陈艳利</small>
-				<br>
-				<small>
-				网络与信息安全学报 7 (5), 13-28</small>
-				<br>
-                <a href="https://mp.weixin.qq.com/s/PRaprFsiebNHfa0bI_pRKw">https://mp.weixin.qq.com/s/PRaprFsiebNHfa0bI_pRKw</a>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Tampering_detection tag-Source_attribution">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[40]</font>
+					<b>基于深度学习的数字图像取证技术研究进展</b>
+					<br>
+					2021年《网络与信息安全学报》论文下载量Top10（中国知网数据统计）<br>
+					<small><span style="font-weight: 700">乔通</span>, 姚宏伟, 潘彬民, 徐明, 陈艳利</small>
+					<br>
+					<small>
+						网络与信息安全学报 7 (5), 13-28</small>
+					<br>
+					<a
+						href="https://mp.weixin.qq.com/s/PRaprFsiebNHfa0bI_pRKw">https://mp.weixin.qq.com/s/PRaprFsiebNHfa0bI_pRKw</a>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/40.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="http://www.infocomm-journal.com/cjnis/EN/10.11959/j.issn.2096-109x.2021047" target="_blank">
+					<a class="btn btn-default"
+						href="http://www.infocomm-journal.com/cjnis/EN/10.11959/j.issn.2096-109x.2021047"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="container" id="year">
-			<div class="col-sm-12"><div class="panel panel-body"></div></div>
-            <div class="col-sm-12">
-                <h2>
-                    <b id="2020">● 2020</b>
-                </h2>
-            </div>
-        </div>
-        <div class="publication media tag-Tampering_detection">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[39]</font>
-                <b>JPEG quantization step estimation with coefficient histogram and spectrum analyses</b>
-                <br>
-                <small>H. Yao, H. Wei, <span style="font-weight: 700">T. Qiao</span>, C. Qin</small>
-				<br>
-				<small>
-				Journal of Visual Communication and Image Representation, 2020.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="container" id="year">
+				<div class="col-sm-12">
+					<div class="panel panel-body"></div>
+				</div>
+				<div class="col-sm-12">
+					<h2>
+						<b id="2020">● 2020</b>
+					</h2>
+				</div>
+			</div>
+			<div class="publication media tag-Tampering_detection">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[39]</font>
+					<b>JPEG quantization step estimation with coefficient histogram and spectrum analyses</b>
+					<br>
+					<small>H. Yao, H. Wei, <span style="font-weight: 700">T. Qiao</span>, C. Qin</small>
+					<br>
+					<small>
+						Journal of Visual Communication and Image Representation, 2020.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/39.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://www.sciencedirect.com/science/article/pii/S1047320320300456" target="_blank">
+					<a class="btn btn-default"
+						href="https://www.sciencedirect.com/science/article/pii/S1047320320300456" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Information_hiding">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[38]</font>
-                <b>Adaptive and separable multiary reversible data hiding in encryption domain</b>
-                <br>
-                <small>M. Yu, Y. Liu, H. Sun, H. Yao, <span style="font-weight: 700">T. Qiao</span></small>
-				<br>
-				<small>
-				EURASIP Journal on Image and Video Processing , 2020.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Information_hiding">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[38]</font>
+					<b>Adaptive and separable multiary reversible data hiding in encryption domain</b>
+					<br>
+					<small>M. Yu, Y. Liu, H. Sun, H. Yao, <span style="font-weight: 700">T. Qiao</span></small>
+					<br>
+					<small>
+						EURASIP Journal on Image and Video Processing , 2020.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/38.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://link.springer.com/article/10.1186/s13640-020-00502-w" target="_blank">
+					<a class="btn btn-default" href="https://link.springer.com/article/10.1186/s13640-020-00502-w"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Tampering_detection">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[37]</font>
-                <b>Image Forgery Detection and Localization via a Reliability Fusion Map</b>
-                <br>
-                <small>H. Yao, M. Xu, <span style="font-weight: 700">T. Qiao*</span>, Y. Wu, N. Zheng</small>
-				<br>
-				<small>
-				Sensors 20 (22), 6668.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Tampering_detection">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[37]</font>
+					<b>Image Forgery Detection and Localization via a Reliability Fusion Map</b>
+					<br>
+					<small>H. Yao, M. Xu, <span style="font-weight: 700">T. Qiao*</span>, Y. Wu, N. Zheng</small>
+					<br>
+					<small>
+						Sensors 20 (22), 6668.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/37.txt" target="_blank">
 						<b>CITE</b>
 					</a>
@@ -917,19 +984,19 @@
 					<a class="btn btn-default" href="https://www.mdpi.com/1424-8220/20/22/6668" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Others">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[36]</font>
-                <b>Identifying WeChat message types without using traditional traffic</b>
-                <br>
-                <small>Q. Zhang, M. Xu, N. Zheng, <span style="font-weight: 700">T. Qiao</span>, Y. Wang</small>
-				<br>
-				<small>
-				Information 11 (1), 18.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Others">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[36]</font>
+					<b>Identifying WeChat message types without using traditional traffic</b>
+					<br>
+					<small>Q. Zhang, M. Xu, N. Zheng, <span style="font-weight: 700">T. Qiao</span>, Y. Wang</small>
+					<br>
+					<small>
+						Information 11 (1), 18.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/36.txt" target="_blank">
 						<b>CITE</b>
 					</a>
@@ -939,116 +1006,124 @@
 					<a class="btn btn-default" href="https://www.mdpi.com/2078-2489/11/1/18" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="container" id="year">
-			<div class="col-sm-12"><div class="panel panel-body"></div></div>
-            <div class="col-sm-12">
-                <h2>
-                    <b id="2019">● 2019</b>
-                </h2>
-            </div>
-        </div>
-        <div class="publication media tag-Information_hiding" id="Data_hiding_1">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[35]</font>
-                <b>Adaptive steganalysis based on statistical model of quantized DCT coefficients for JPEG images</b>
-                <br>
-                <small><span style="font-weight: 700">T. Qiao</span>, X. Luo, T. Wu, M. Xu, Z. Qian</small>
-				<br>
-				<small>
-				IEEE Transactions on Dependable and Secure Computing, 2019, 1-16.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="container" id="year">
+				<div class="col-sm-12">
+					<div class="panel panel-body"></div>
+				</div>
+				<div class="col-sm-12">
+					<h2>
+						<b id="2019">● 2019</b>
+					</h2>
+				</div>
+			</div>
+			<div class="publication media tag-Information_hiding" id="Data_hiding_1">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[35]</font>
+					<b>Adaptive steganalysis based on statistical model of quantized DCT coefficients for JPEG
+						images</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao</span>, X. Luo, T. Wu, M. Xu, Z. Qian</small>
+					<br>
+					<small>
+						IEEE Transactions on Dependable and Secure Computing, 2019, 1-16.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/35.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/8944161/" target="_blank">
+					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/8944161/"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Source_attribution">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[34]</font>
-                <b>Source camera identification via low dimensional PRNU features</b>
-                <br>
-                <small>Y. Zhao, N. Zheng, <span style="font-weight: 700">T. Qiao*</span>, M. Xu</small>
-				<br>
-				<small>
-				Multimedia Tools and Applications, 2019, 78 (7), 8247-8269.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Source_attribution">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[34]</font>
+					<b>Source camera identification via low dimensional PRNU features</b>
+					<br>
+					<small>Y. Zhao, N. Zheng, <span style="font-weight: 700">T. Qiao*</span>, M. Xu</small>
+					<br>
+					<small>
+						Multimedia Tools and Applications, 2019, 78 (7), 8247-8269.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/34.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://link.springer.com/article/10.1007/s11042-018-6809-4" target="_blank">
+					<a class="btn btn-default" href="https://link.springer.com/article/10.1007/s11042-018-6809-4"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Information_hiding">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[33]</font>
-                <b>Robust Steganography by Modifying Sign of DCT Coefficients</b>
-                <br>
-                <small>Z. Zhu, N. Zheng, <span style="font-weight: 700">T. Qiao*</span>, M. Xu</small>
-				<br>
-				<small>
-				IEEE Access, 2019, 7, 168613-168628.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Information_hiding">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[33]</font>
+					<b>Robust Steganography by Modifying Sign of DCT Coefficients</b>
+					<br>
+					<small>Z. Zhu, N. Zheng, <span style="font-weight: 700">T. Qiao*</span>, M. Xu</small>
+					<br>
+					<small>
+						IEEE Access, 2019, 7, 168613-168628.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/33.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/8901147" target="_blank">
+					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/8901147"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Information_hiding">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[32]</font>
-                <b>Fuzzy localization of steganographic flipped bits via modification map</b>
-                <br>
-                <small>Q. Liu, <span style="font-weight: 700">T. Qiao</span>, M. Xu, N. Zheng</small>
-				<br>
-				<small>
-				IEEE Access, 2019, 7, 74157-74167.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Information_hiding">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[32]</font>
+					<b>Fuzzy localization of steganographic flipped bits via modification map</b>
+					<br>
+					<small>Q. Liu, <span style="font-weight: 700">T. Qiao</span>, M. Xu, N. Zheng</small>
+					<br>
+					<small>
+						IEEE Access, 2019, 7, 74157-74167.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/32.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/8727497" target="_blank">
+					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/8727497"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Source_attribution">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[31]</font>
-                <b>Designing Statistical Model-based Discriminator for Identifying Computer-generated Graphics from Natural Images</b>
-                <br>
-                <small>M. Huang, M. Xu, <span style="font-weight: 700">T. Qiao*</span>, T. Wu</small>
-				<br>
-				<small>
-				JUCS-Journal of Universal Computer Science 25, 1151.</small>
-                <br>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Source_attribution">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[31]</font>
+					<b>Designing Statistical Model-based Discriminator for Identifying Computer-generated Graphics from
+						Natural Images</b>
+					<br>
+					<small>M. Huang, M. Xu, <span style="font-weight: 700">T. Qiao*</span>, T. Wu</small>
+					<br>
+					<small>
+						JUCS-Journal of Universal Computer Science 25, 1151.</small>
+					<br>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/31.txt" target="_blank">
 						<b>CITE</b>
 					</a>
@@ -1058,62 +1133,66 @@
 					<a class="btn btn-default" href="https://zenodo.org/record/4840892#.YjMMsI9By5c" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Others tag-Source_attribution">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[30]</font>
-                <b>Deep android malware classification with api-based feature graph</b>
-                <br>
-                <small>N. Huang, M. Xu, N. Zheng, <span style="font-weight: 700">T. Qiao</span>, K.K.R. Choo</small>
-				<br>
-				<small>2019 18th IEEE International Conference On Trust, Security And Privacy Icomputer systems.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Others tag-Source_attribution">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[30]</font>
+					<b>Deep android malware classification with api-based feature graph</b>
+					<br>
+					<small>N. Huang, M. Xu, N. Zheng, <span style="font-weight: 700">T. Qiao</span>, K.K.R. Choo</small>
+					<br>
+					<small>2019 18th IEEE International Conference On Trust, Security And Privacy Icomputer
+						systems.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/30.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/8887380" target="_blank">
+					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/8887380"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Others">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[29]</font>
-                <b>Multiple human upper bodies detection via candidate-region convolutional neural network</b>
-                <br>
-                <small>A. Zhu, T. Wang, <span style="font-weight: 700">T. Qiao</span></small>
-				<br>
-				<small>
-				Multimedia Tools and Applications 78 (12), 16077-16096.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Others">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[29]</font>
+					<b>Multiple human upper bodies detection via candidate-region convolutional neural network</b>
+					<br>
+					<small>A. Zhu, T. Wang, <span style="font-weight: 700">T. Qiao</span></small>
+					<br>
+					<small>
+						Multimedia Tools and Applications 78 (12), 16077-16096.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/29.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://link.springer.com/article/10.1007/s11042-018-6964-7" target="_blank">
+					<a class="btn btn-default" href="https://link.springer.com/article/10.1007/s11042-018-6964-7"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Others tag-Source_attribution">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[28]</font>
-                <b>Hierarchical identifier: Application to user privacy eavesdropping on mobile payment app</b>
-                <br>
-                <small>Y. Wang, N. Zheng, M. Xu, <span style="font-weight: 700">T. Qiao*</span>, Q. Zhang, F. Yan, J. Xu</small>
-				<br>
-				<small>
-				Sensors 19 (14), 3052.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Others tag-Source_attribution">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[28]</font>
+					<b>Hierarchical identifier: Application to user privacy eavesdropping on mobile payment app</b>
+					<br>
+					<small>Y. Wang, N. Zheng, M. Xu, <span style="font-weight: 700">T. Qiao*</span>, Q. Zhang, F. Yan,
+						J. Xu</small>
+					<br>
+					<small>
+						Sensors 19 (14), 3052.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/28.txt" target="_blank">
 						<b>CITE</b>
 					</a>
@@ -1123,375 +1202,413 @@
 					<a class="btn btn-default" href="https://www.mdpi.com/1424-8220/19/14/3052" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        
-        <div class="container" id="year">
-			<div class="col-sm-12"><div class="panel panel-body"></div></div>
-            <div class="col-sm-12">
-                <h2>
-                    <b id="2018">● 2018</b>
-                </h2>
-            </div>
-        </div>
-        <div class="publication media tag-Tampering_detection" id="Tampering_detection_1">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[27]</font>
-                <b>Statistical model-based detector via texture weight map: application in re-sampling authentication</b>
-                <br>
-                <small><span style="font-weight: 700">T. Qiao</span>, R. Shi, X. Luo, M. Xu, N. Zheng, Y. Wu</small>
-				<br>
-				<small>
-				IEEE Transactions on Multimedia, 2018, 21 (5): 1077-1092.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+
+			<div class="container" id="year">
+				<div class="col-sm-12">
+					<div class="panel panel-body"></div>
+				</div>
+				<div class="col-sm-12">
+					<h2>
+						<b id="2018">● 2018</b>
+					</h2>
+				</div>
+			</div>
+			<div class="publication media tag-Tampering_detection" id="Tampering_detection_1">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[27]</font>
+					<b>Statistical model-based detector via texture weight map: application in re-sampling
+						authentication</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao</span>, R. Shi, X. Luo, M. Xu, N. Zheng, Y. Wu</small>
+					<br>
+					<small>
+						IEEE Transactions on Multimedia, 2018, 21 (5): 1077-1092.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/27.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="Codes-TMM-2018.rar" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/8481547" target="_blank">
+					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/8481547"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Source_attribution">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[26]</font>
-                <b>Identifying individual camera device from raw images</b>
-                <br>
-                <small><span style="font-weight: 700">T. Qiao*</span>, F. Retraint</small>
-				<br>
-				<small>
-				IEEE Access 6, 78038-78054.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Source_attribution">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[26]</font>
+					<b>Identifying individual camera device from raw images</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao*</span>, F. Retraint</small>
+					<br>
+					<small>
+						IEEE Access 6, 78038-78054.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/26.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/8558551" target="_blank">
+					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/8558551"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Source_attribution">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[25]</font>
-                <b>Robust multi-classifier for camera model identification based on convolution neural network</b>
-                <br>
-                <small>H. Yao, <span style="font-weight: 700">T. Qiao</span>, M. Xu, N. Zheng</small>
-				<br>
-				<small>
-				IEEE Access, 2018, 6, 24973-24982.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Source_attribution">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[25]</font>
+					<b>Robust multi-classifier for camera model identification based on convolution neural network</b>
+					<br>
+					<small>H. Yao, <span style="font-weight: 700">T. Qiao</span>, M. Xu, N. Zheng</small>
+					<br>
+					<small>
+						IEEE Access, 2018, 6, 24973-24982.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/25.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/8353219" target="_blank">
+					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/8353219"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Others">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[24]</font>
-                <b>Using machine learning for determining network robustness of multi-agent systems under attacks</b>
-                <br>
-                <small>G. Wang, M. Xu, Y. Wu, N. Zheng, J. Xu, <span style="font-weight: 700">T. Qiao</span></small>
-				<br>
-				<small>
-				Pacific Rim International Conference on Artificial Intelligence, 491-498.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Others">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[24]</font>
+					<b>Using machine learning for determining network robustness of multi-agent systems under
+						attacks</b>
+					<br>
+					<small>G. Wang, M. Xu, Y. Wu, N. Zheng, J. Xu, <span style="font-weight: 700">T. Qiao</span></small>
+					<br>
+					<small>
+						Pacific Rim International Conference on Artificial Intelligence, 491-498.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/24.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://link.springer.com/chapter/10.1007/978-3-319-97310-4_56" target="_blank">
+					<a class="btn btn-default" href="https://link.springer.com/chapter/10.1007/978-3-319-97310-4_56"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Others tag-Tampering_detection">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[23]</font>
-                <b>A location spoofing detection method for social networks (short paper)</b>
-                <br>
-                <small>C. Ding, T. Wu, <span style="font-weight: 700">T. Qiao</span>, N. Zheng, M. Xu, Y. Wu, W. Xia</small>
-				<br>
-				<small>
-				International Conference on Collaborative Computing: Networking, Applications and Worksharing.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Others tag-Tampering_detection">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[23]</font>
+					<b>A location spoofing detection method for social networks (short paper)</b>
+					<br>
+					<small>C. Ding, T. Wu, <span style="font-weight: 700">T. Qiao</span>, N. Zheng, M. Xu, Y. Wu, W.
+						Xia</small>
+					<br>
+					<small>
+						International Conference on Collaborative Computing: Networking, Applications and
+						Worksharing.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/23.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://link.springer.com/chapter/10.1007/978-3-030-12981-1_9" target="_blank">
+					<a class="btn btn-default" href="https://link.springer.com/chapter/10.1007/978-3-030-12981-1_9"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Others tag-Source_attribution">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[22]</font>
-                <b>Identifying wechat red packets and fund transfers via analyzing encrypted network traffic</b>
-                <br>
-                <small>F. Yan, M. Xu, <span style="font-weight: 700">T. Qiao*</span>, T. Wu, X. Yang, N. Zheng, K.K.R. Choo</small>
-				<br>
-				<small>
-				2018 17th IEEE International Conference On Trust, Security And Privacy In Computing And Communications.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Others tag-Source_attribution">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[22]</font>
+					<b>Identifying wechat red packets and fund transfers via analyzing encrypted network traffic</b>
+					<br>
+					<small>F. Yan, M. Xu, <span style="font-weight: 700">T. Qiao*</span>, T. Wu, X. Yang, N. Zheng,
+						K.K.R. Choo</small>
+					<br>
+					<small>
+						2018 17th IEEE International Conference On Trust, Security And Privacy In Computing And
+						Communications.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/22.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/8456067" target="_blank">
+					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/8456067"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Tampering_detection">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[21]</font>
-                <b>Expose noise level inconsistency incorporating the inhomogeneity scoring strategy</b>
-                <br>
-                <small>H. Yao, F. Cao, Z. Tang, J. Wang, <span style="font-weight: 700">T. Qiao</span></small>
-				<br>
-				<small>
-				Multimedia Tools and Applications 77 (14), 18139-18161	14	2018.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Tampering_detection">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[21]</font>
+					<b>Expose noise level inconsistency incorporating the inhomogeneity scoring strategy</b>
+					<br>
+					<small>H. Yao, F. Cao, Z. Tang, J. Wang, <span style="font-weight: 700">T. Qiao</span></small>
+					<br>
+					<small>
+						Multimedia Tools and Applications 77 (14), 18139-18161 14 2018.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/21.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://link.springer.com/article/10.1007/s11042-017-5206-8" target="_blank">
+					<a class="btn btn-default" href="https://link.springer.com/article/10.1007/s11042-017-5206-8"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Others">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[20]</font>
-                <b>A novel framework of robust video watermarking based on statistical model</b>
-                <br>
-                <small>L. Li, X. Li, <span style="font-weight: 700">T. Qiao*</span>, X. Xu, S. Zhang, C. Chang</small>
-				<br>
-				<small>
-				International Conference on Cloud Computing and Security, 160-172.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Others">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[20]</font>
+					<b>A novel framework of robust video watermarking based on statistical model</b>
+					<br>
+					<small>L. Li, X. Li, <span style="font-weight: 700">T. Qiao*</span>, X. Xu, S. Zhang, C.
+						Chang</small>
+					<br>
+					<small>
+						International Conference on Cloud Computing and Security, 160-172.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/20.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://link.springer.com/chapter/10.1007/978-3-030-00015-8_14" target="_blank">
+					<a class="btn btn-default" href="https://link.springer.com/chapter/10.1007/978-3-030-00015-8_14"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Tampering_detection">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[19]</font>
-                <b>Exposing image resampling forgery by using linear parametric model</b>
-                <br>
-                <small><span style="font-weight: 700">T. Qiao*</span>, A. Zhu, F. Retraint</small>
-				<br>
-				<small>
-				Multimedia Tools and Applications 77 (2), 1501-1523.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Tampering_detection">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[19]</font>
+					<b>Exposing image resampling forgery by using linear parametric model</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao*</span>, A. Zhu, F. Retraint</small>
+					<br>
+					<small>
+						Multimedia Tools and Applications 77 (2), 1501-1523.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/19.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://link.springer.com/article/10.1007/s11042-016-4314-1" target="_blank">
+					<a class="btn btn-default" href="https://link.springer.com/article/10.1007/s11042-016-4314-1"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="container" id="year">
-			<div class="col-sm-12"><div class="panel panel-body"></div></div>
-            <div class="col-sm-12">
-                <h2>
-                    <b id="2017">● 2017</b>
-                </h2>
-            </div>
-        </div>
-        <div class="publication media tag-Source_attribution tag-Others">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[18]</font>
-                <b>Android App Classification and Permission Usage Risk Assessment</b>
-                <br>
-                <small>Y. Shen, M. Xu, N. Zheng, J. Xu, W. Xia, Y. Wu, <span style="font-weight: 700">T. Qiao</span>, T. Yang</small>
-				<br>
-				<small>
-				International Conference on Collaborative Computing: Networking, Applications and Worksharing.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="container" id="year">
+				<div class="col-sm-12">
+					<div class="panel panel-body"></div>
+				</div>
+				<div class="col-sm-12">
+					<h2>
+						<b id="2017">● 2017</b>
+					</h2>
+				</div>
+			</div>
+			<div class="publication media tag-Source_attribution tag-Others">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[18]</font>
+					<b>Android App Classification and Permission Usage Risk Assessment</b>
+					<br>
+					<small>Y. Shen, M. Xu, N. Zheng, J. Xu, W. Xia, Y. Wu, <span style="font-weight: 700">T.
+							Qiao</span>, T. Yang</small>
+					<br>
+					<small>
+						International Conference on Collaborative Computing: Networking, Applications and
+						Worksharing.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/18.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://link.springer.com/chapter/10.1007/978-3-030-00916-8_52" target="_blank">
+					<a class="btn btn-default" href="https://link.springer.com/chapter/10.1007/978-3-030-00916-8_52"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Others">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[17]</font>
-                <b>A Privacy Settings Prediction Model for Textual Posts on Social Networks</b>
-                <br>
-                <small>L. Chen, M. Xu, X. Yang, N. Zheng, Y. Wu, J. Xu, <span style="font-weight: 700">T. Qiao</span>, H. Liu</small>
-				<br>
-				<small>
-				International Conference on Collaborative Computing: Networking, Applications and Worksharing.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Others">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[17]</font>
+					<b>A Privacy Settings Prediction Model for Textual Posts on Social Networks</b>
+					<br>
+					<small>L. Chen, M. Xu, X. Yang, N. Zheng, Y. Wu, J. Xu, <span style="font-weight: 700">T.
+							Qiao</span>, H. Liu</small>
+					<br>
+					<small>
+						International Conference on Collaborative Computing: Networking, Applications and
+						Worksharing.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/17.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://link.springer.com/chapter/10.1007/978-3-030-00916-8_53" target="_blank">
+					<a class="btn btn-default" href="https://link.springer.com/chapter/10.1007/978-3-030-00916-8_53"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Others">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[16]</font>
-                <b>Adaptive carving method for live flv streaming</b>
-                <br>
-                <small>H. Ge, N. Zheng, L. Cai, M. Xu, <span style="font-weight: 700">T. Qiao</span>, T. Yang, J. Sun, S. Hu</small>
-				<br>
-				<small>
-				International Conference on Collaborative Computing: Networking, Applications and Worksharing.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Others">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[16]</font>
+					<b>Adaptive carving method for live flv streaming</b>
+					<br>
+					<small>H. Ge, N. Zheng, L. Cai, M. Xu, <span style="font-weight: 700">T. Qiao</span>, T. Yang, J.
+						Sun, S. Hu</small>
+					<br>
+					<small>
+						International Conference on Collaborative Computing: Networking, Applications and
+						Worksharing.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/16.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://link.springer.com/chapter/10.1007/978-3-030-00916-8_51" target="_blank">
+					<a class="btn btn-default" href="https://link.springer.com/chapter/10.1007/978-3-030-00916-8_51"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Others">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[15]</font>
-                <b>A novel file carving algorithm for National Marine Electronics Association (NMEA) logs in GPS forensics</b>
-                <br>
-                <small>K. Shi, M. Xu, H. Jin, <span style="font-weight: 700">T. Qiao</span>, X. Yang, N. Zheng, J. Xu, K.K.R. Choo</small>
-				<br>
-				<small>
-				Digital Investigation 23, 11-21.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Others">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[15]</font>
+					<b>A novel file carving algorithm for National Marine Electronics Association (NMEA) logs in GPS
+						forensics</b>
+					<br>
+					<small>K. Shi, M. Xu, H. Jin, <span style="font-weight: 700">T. Qiao</span>, X. Yang, N. Zheng, J.
+						Xu, K.K.R. Choo</small>
+					<br>
+					<small>
+						Digital Investigation 23, 11-21.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/15.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://www.sciencedirect.com/science/article/pii/S1742287617301056" target="_blank">
+					<a class="btn btn-default"
+						href="https://www.sciencedirect.com/science/article/pii/S1742287617301056" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Others">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[14]</font>
-                <b>A Novel File Carving Algorithm for EVTX Logs</b>
-                <br>
-                <small>M. Xu, J. Sun, N. Zheng, <span style="font-weight: 700">T. Qiao</span>, Y. Wu, K. Shi, H. Ge, T. Yang</small>
-				<br>
-				<small>
-				International Conference on Digital Forensics and Cyber Crime, 97-105.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Others">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[14]</font>
+					<b>A Novel File Carving Algorithm for EVTX Logs</b>
+					<br>
+					<small>M. Xu, J. Sun, N. Zheng, <span style="font-weight: 700">T. Qiao</span>, Y. Wu, K. Shi, H. Ge,
+						T. Yang</small>
+					<br>
+					<small>
+						International Conference on Digital Forensics and Cyber Crime, 97-105.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/14.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://link.springer.com/chapter/10.1007/978-3-319-73697-6_7" target="_blank">
+					<a class="btn btn-default" href="https://link.springer.com/chapter/10.1007/978-3-319-73697-6_7"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Source_attribution" id="Source_attribution_3">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[13]</font>
-                <b>Individual camera device identification from JPEG images</b>
-                <br>
-                <small><span style="font-weight: 700">T. Qiao*</span>, F. Retraint, R. Cogranne, T.H. Thai</small>
-				<br>
-				<small>
-				Signal Processing: Image Communication 52, 74-86.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Source_attribution" id="Source_attribution_3">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[13]</font>
+					<b>Individual camera device identification from JPEG images</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao*</span>, F. Retraint, R. Cogranne, T.H. Thai</small>
+					<br>
+					<small>
+						Signal Processing: Image Communication 52, 74-86.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/13.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://www.sciencedirect.com/science/article/pii/S0923596516301953" target="_blank">
+					<a class="btn btn-default"
+						href="https://www.sciencedirect.com/science/article/pii/S0923596516301953" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="container" id="year">
-			<div class="col-sm-12"><div class="panel panel-body"></div></div>
-            <div class="col-sm-12">
-                <h2>
-                    <b id="2014-2016">● 2014-2016</b>
-                </h2>
-            </div>
-        </div>
-        <div class="publication media tag-Source_attribution tag-Tampering_detection tag-Information_hiding">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[12]</font>
-                <b>Statistical detection for digital image forensics</b>
-                <br>
-                <small><span style="font-weight: 700">T. Qiao</span></small>
-				<br>
-				<small>
-				Doctoral Dissertation, Supervised by Prof. Florent Retraint and Dr. Remi Cogranne, University of Technology of Troyes. 
-				</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="container" id="year">
+				<div class="col-sm-12">
+					<div class="panel panel-body"></div>
+				</div>
+				<div class="col-sm-12">
+					<h2>
+						<b id="2014-2016">● 2014-2016</b>
+					</h2>
+				</div>
+			</div>
+			<div class="publication media tag-Source_attribution tag-Tampering_detection tag-Information_hiding">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[12]</font>
+					<b>Statistical detection for digital image forensics</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao</span></small>
+					<br>
+					<small>
+						Doctoral Dissertation, Supervised by Prof. Florent Retraint and Dr. Remi Cogranne, University of
+						Technology of Troyes.
+					</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/12.txt" target="_blank">
 						<b>CITE</b>
 					</a>
@@ -1501,181 +1618,193 @@
 					<a class="btn btn-default" href="https://tel.archives-ouvertes.fr/tel-03361337/" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Information_hiding">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[11]</font>
-                <b>Steganalysis of JSteg algorithm using hypothesis testing theory</b>
-                <br>
-                <small><span style="font-weight: 700">T. Qiao*</span>, F. Retraint, R. Cogranne, C. Zitzmann</small>
-				<br>
-				<small>
-				EURASIP Journal on Information Security 2015 (1), 1-16.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Information_hiding">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[11]</font>
+					<b>Steganalysis of JSteg algorithm using hypothesis testing theory</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao*</span>, F. Retraint, R. Cogranne, C. Zitzmann</small>
+					<br>
+					<small>
+						EURASIP Journal on Information Security 2015 (1), 1-16.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/11.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://link.springer.com/article/10.1186/s13635-015-0019-7" target="_blank">
+					<a class="btn btn-default" href="https://link.springer.com/article/10.1186/s13635-015-0019-7"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Source_attribution">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[10]</font>
-                <b>Source camera device identification based on raw images</b>
-                <br>
-                <small><span style="font-weight: 700">T. Qiao*</span>, F. Retraint, R. Cogranne, T.H. Thai</small>
-				<br>
-				<small>
-				2015 IEEE international conference on image processing (ICIP), 3812-3816.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Source_attribution">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[10]</font>
+					<b>Source camera device identification based on raw images</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao*</span>, F. Retraint, R. Cogranne, T.H. Thai</small>
+					<br>
+					<small>
+						2015 IEEE international conference on image processing (ICIP), 3812-3816.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/10.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/7351518" target="_blank">
+					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/7351518"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Information_hiding">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[9]</font>
-                <b>Statistical detection of jsteg steganography using hypothesis testing theory</b>
-                <br>
-                <small><span style="font-weight: 700">T. Qiao</span>, C. Zitzmann, F. Retraint, R. Cogranne</small>
-				<br>
-				<small>
-				2014 IEEE International Conference on Image Processing (ICIP), 5517-5521.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Information_hiding">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[9]</font>
+					<b>Statistical detection of jsteg steganography using hypothesis testing theory</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao</span>, C. Zitzmann, F. Retraint, R. Cogranne</small>
+					<br>
+					<small>
+						2014 IEEE International Conference on Image Processing (ICIP), 5517-5521.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/9.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/7026116/" target="_blank">
+					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/7026116/"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Information_hiding">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[8]</font>
-                <b>Detection of JSteg algorithm using hypothesis testing theory and a statistical model with nuisance parameters</b>
-                <br>
-                <small><span style="font-weight: 700">T. Qiao</span>, C. Ziitmann, R. Cogranne, F. Retraint</small>
-				<br>
-				<small>
-				Proceedings of the 2nd ACM workshop on Information hiding and multimedia security.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Information_hiding">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[8]</font>
+					<b>Detection of JSteg algorithm using hypothesis testing theory and a statistical model with
+						nuisance parameters</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao</span>, C. Ziitmann, R. Cogranne, F. Retraint</small>
+					<br>
+					<small>
+						Proceedings of the 2nd ACM workshop on Information hiding and multimedia security.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/8.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://dl.acm.org/doi/abs/10.1145/2600918.2600932" target="_blank">
+					<a class="btn btn-default" href="https://dl.acm.org/doi/abs/10.1145/2600918.2600932"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="container" id="year">
-			<div class="col-sm-12"><div class="panel panel-body"></div></div>
-            <div class="col-sm-12">
-                <h2>
-                    <b id="2010-2013">● 2010-2013</b>
-                </h2>
-            </div>
-        </div>
-        <div class="publication media tag-Tampering_detection">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[7]</font>
-                <b>Simplified Anti-Forensics of JPEG Compression.</b>
-                <br>
-                <small>Z. Qian, <span style="font-weight: 700">T. Qiao</span></small>
-				<br>
-				<small>
-				J. Comput. 8 (10), 2483-2488.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="container" id="year">
+				<div class="col-sm-12">
+					<div class="panel panel-body"></div>
+				</div>
+				<div class="col-sm-12">
+					<h2>
+						<b id="2010-2013">● 2010-2013</b>
+					</h2>
+				</div>
+			</div>
+			<div class="publication media tag-Tampering_detection">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[7]</font>
+					<b>Simplified Anti-Forensics of JPEG Compression.</b>
+					<br>
+					<small>Z. Qian, <span style="font-weight: 700">T. Qiao</span></small>
+					<br>
+					<small>
+						J. Comput. 8 (10), 2483-2488.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/7.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="http://www.jcomputers.us/index.php?m=content&c=index&a=show&catid=114&id=1449" target="_blank">
+					<a class="btn btn-default"
+						href="http://www.jcomputers.us/index.php?m=content&c=index&a=show&catid=114&id=1449"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Source_attribution">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[6]</font>
-                <b>Image authentication by statistical analysis</b>
-                <br>
-                <small><span style="font-weight: 700">T. Qiao</span>, F. Retraint, R. Cogranne</small>
-				<br>
-				<small>
-				21st European Signal Processing Conference (EUSIPCO 2013), 1-5.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Source_attribution">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[6]</font>
+					<b>Image authentication by statistical analysis</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao</span>, F. Retraint, R. Cogranne</small>
+					<br>
+					<small>
+						21st European Signal Processing Conference (EUSIPCO 2013), 1-5.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/6.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/6811485" target="_blank">
+					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/6811485"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Source_attribution">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[5]</font>
-                <b>Digital image forensics based on local energy variance properties</b>
-                <br>
-                <small><span style="font-weight: 700">T. Qiao</span>, Z. Qian, X. Zhang, W. Wang</small>
-				<br>
-				<small>
-				Pattern Recognition and Artificial Intelligence 25 (2), 280-284.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Source_attribution">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[5]</font>
+					<b>Digital image forensics based on local energy variance properties</b>
+					<br>
+					<small><span style="font-weight: 700">T. Qiao</span>, Z. Qian, X. Zhang, W. Wang</small>
+					<br>
+					<small>
+						Pattern Recognition and Artificial Intelligence 25 (2), 280-284.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/5.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://www.researchgate.net/publication/288552383_Digital_image_forensics_based_on_local_energy_variance_properties" target="_blank">
+					<a class="btn btn-default"
+						href="https://www.researchgate.net/publication/288552383_Digital_image_forensics_based_on_local_energy_variance_properties"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Tampering_detection">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[4]</font>
-                <b>Image Passive Authentication and Robust Detection of Copy-move Forgeries</b>
-                <br>
-                <small>H. Yao, Y. Chen, Y. Zhao, Y. Chen, <span style="font-weight: 700">T. Qiao</span></small>
-				<br>
-				<small>
-				Dianshi Jishu(Video Engineering) 36 (9), 14-18.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Tampering_detection">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[4]</font>
+					<b>Image Passive Authentication and Robust Detection of Copy-move Forgeries</b>
+					<br>
+					<small>H. Yao, Y. Chen, Y. Zhao, Y. Chen, <span style="font-weight: 700">T. Qiao</span></small>
+					<br>
+					<small>
+						Dianshi Jishu(Video Engineering) 36 (9), 14-18.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/4.txt" target="_blank">
 						<b>CITE</b>
 					</a>
@@ -1685,79 +1814,82 @@
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Others">
-            <div class="media-body" style="width:765px;display:inline-block">
-			<font>[3]</font>
-                <b>An edge detection method in DCT domain</b>
-                <br>
-                <small>Z. Qian, W. Wang, <span style="font-weight: 700">T. Qiao</span></small>
-				<br>
-				<small>
-				Procedia Engineering 29, 344-348.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Others">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[3]</font>
+					<b>An edge detection method in DCT domain</b>
+					<br>
+					<small>Z. Qian, W. Wang, <span style="font-weight: 700">T. Qiao</span></small>
+					<br>
+					<small>
+						Procedia Engineering 29, 344-348.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/3.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://www.sciencedirect.com/science/article/pii/S187770581106557X" target="_blank">
+					<a class="btn btn-default"
+						href="https://www.sciencedirect.com/science/article/pii/S187770581106557X" target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Tampering_detection">
-            <div class="media-body" style="width:765px;display:inline-block">
-				<font>[2]</font>
-                <b>Detecting copy-move forgery using non-negative matrix factorization</b>
-                <br>
-                <small>H. Yao, <span style="font-weight: 700">T. Qiao</span>, Z. Tang, Y. Zhao, H. Mao</small>
-				<br>
-				<small>
-				2011 Third International Conference on Multimedia Information Networking and Security.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Tampering_detection">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[2]</font>
+					<b>Detecting copy-move forgery using non-negative matrix factorization</b>
+					<br>
+					<small>H. Yao, <span style="font-weight: 700">T. Qiao</span>, Z. Tang, Y. Zhao, H. Mao</small>
+					<br>
+					<small>
+						2011 Third International Conference on Multimedia Information Networking and Security.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/2.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/6103842" target="_blank">
+					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/6103842"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
-        <div class="publication media tag-Information_hiding">
-            <div class="media-body" style="width:765px;display:inline-block">
-				<font>[1]</font>
-                <b>Image self-embedding with large-area restoration capability</b>
-                <br>
-                <small>Z. Qian, <span style="font-weight: 700">T. Qiao</span></small>
-				<br>
-				<small>
-				2010 International Conference on Multimedia Information Networking and Security.</small>
-            </div>
-			<div style="padding-top:30px;width:190px;display:inline-block">
+			<div class="publication media tag-Information_hiding">
+				<div class="media-body" style="width:765px;display:inline-block">
+					<font>[1]</font>
+					<b>Image self-embedding with large-area restoration capability</b>
+					<br>
+					<small>Z. Qian, <span style="font-weight: 700">T. Qiao</span></small>
+					<br>
+					<small>
+						2010 International Conference on Multimedia Information Networking and Security.</small>
+				</div>
+				<div style="padding-top:30px;width:190px;display:inline-block">
 					<a class="btn btn-default" href="./static/latex_pub/1.txt" target="_blank">
 						<b>CITE</b>
 					</a>
 					<a class="btn btn-default" href="None" target="_blank">
 						<b>CODE</b>
 					</a>
-					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/5671006" target="_blank">
+					<a class="btn btn-default" href="https://ieeexplore.ieee.org/abstract/document/5671006"
+						target="_blank">
 						<b>DOI</b>
 					</a>
+				</div>
 			</div>
-        </div>
 
-        最后修改时间:2024-01-23 14:00:10
-    </div>
-</div>
-</body>
+			最后修改时间:2024-01-23 14:00:10
+		</div>
+		</div>
+	</body>
 
 
 
