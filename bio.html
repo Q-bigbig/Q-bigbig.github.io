@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-	<meta name="viewport"
-		content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<!-- <meta name="viewport"
+		content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"> -->
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
 		<title>Biography</title>
 		<link rel="stylesheet" href="./bootstrap.min.css">
 		<link rel="stylesheet" href="./main.css">
@@ -22,7 +22,19 @@
 			top: 10px;
 		}
 	</style>
-
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			var meta = document.querySelector('meta[name="viewport"]');
+			if (meta) {
+				meta.setAttribute('content', 'width=1520');
+			} else {
+				var newMeta = document.createElement('meta');
+				newMeta.setAttribute('name', 'viewport');
+				newMeta.setAttribute('content', 'width=1520');
+				document.head.appendChild(newMeta);
+			}
+		});
+	</script>
 	<body>
 
 		<div class="box container">
@@ -61,16 +73,17 @@
 						</h4>
 						<p style="text-align:justify;margin-bottom: 0;">
 							主要从事网络空间安全相关领域的研究，重点聚焦<b>人工智能安全、多媒体取证、 信息隐藏与分析</b>等：
-							<ol style="text-align:justify">
-								<li>图像源相机检测。此项研究分为相机型号的来源检测和相机设备的来源检测：</li>
-									<ul>
-										<li>型号来源检测用于区别相同（或者不同）品牌不同型号相机所拍摄的数字图像。</li>
-										<li>设备来源检测用于区别相同型号不同设备相机所捕获的数字图像。</li>
-									</ul>
-								<li>图像内容完整性检测。此研究用于鉴别图像是否遭到篡改攻击。针对不同的篡改手段，通过提取图像的特征信息，设计通用或专用检测器并完成检测。篡改方法包括复制-粘贴（Copy-move），拼接（Splicing），以及重采样（Re-sampling）等图像后处理技术。</li>
-								<li>图像隐写分析。此研究用于检测载体图像是否携带秘密信息及针对嵌入信息进行精确定位。</li>
-								<li>人工智能安全。此研究用于取证视频及图像中的虚假合成人脸。</li>
-							</ol>
+						<ol style="text-align:justify">
+							<li>图像源相机检测。此项研究分为相机型号的来源检测和相机设备的来源检测：</li>
+							<ul>
+								<li>型号来源检测用于区别相同（或者不同）品牌不同型号相机所拍摄的数字图像。</li>
+								<li>设备来源检测用于区别相同型号不同设备相机所捕获的数字图像。</li>
+							</ul>
+							<li>图像内容完整性检测。此研究用于鉴别图像是否遭到篡改攻击。针对不同的篡改手段，通过提取图像的特征信息，设计通用或专用检测器并完成检测。篡改方法包括复制-粘贴（Copy-move），拼接（Splicing），以及重采样（Re-sampling）等图像后处理技术。
+							</li>
+							<li>图像隐写分析。此研究用于检测载体图像是否携带秘密信息及针对嵌入信息进行精确定位。</li>
+							<li>人工智能安全。此研究用于取证视频及图像中的虚假合成人脸。</li>
+						</ol>
 						</p>
 						<p style="text-align:justify">
 							本人已在国内外知名刊物及会议录上公开发表论文60余篇，包括：IEEE TPAMI （CCF A类）、IEEE TIFS（CCF A类）、IEEE TDSC （CCF A类）、IEEE
