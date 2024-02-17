@@ -2,13 +2,27 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	</head>
-	<body>﻿
-
-		<meta name="viewport"
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {  
+		    var meta = document.querySelector('meta[name="viewport"]');  
+		    if (meta) {  
+		        meta.setAttribute('content', 'width=1512');  
+		    } else {  
+		        var newMeta = document.createElement('meta');  
+		        newMeta.setAttribute('name', 'viewport');  
+		        newMeta.setAttribute('content', 'width=1512');  
+		        document.head.appendChild(newMeta);  
+		    }  
+		});
+	</script>
+	<body>﻿ 
+		<!-- <meta name="viewport"
 			content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+		
+		
 		<title>Research</title>
 		<link rel="stylesheet" href="bootstrap.min.css">
 		<link rel="stylesheet" href="main.css">
@@ -17,12 +31,17 @@
 		<style>
 			.container {
 				max-width: 100%;
+				/* max-width: 15000px; */
 			}
 
 			.fa-reply {
 				position: absolute;
 				right: 50px;
+				/* right: 16px; */
+				/* right: 4%; */
 				top: 10px;
+				/* top: 3px; */
+				/* top: 1%; */
 
 				.h4 {
 					font-family: & quot;
@@ -30,6 +49,7 @@
 					color: #333333;
 					background-color: #FFFFFF;
 					font-size: 16px !important;
+					/* font-size: 5px !important; */
 				}
 		</style>
 
@@ -45,10 +65,9 @@
 					<div class="panel panel-body">
 						<h1><b>Research</b></h1>
 						<div class='' fa-reply ">
-                <a href=" index.html">
+							<a href=" index.html">
 							<i class="fa fa-reply" aria-hidden="true">返回</i></a>
 						</div>
-
 					</div>
 				</div>
 			</div>
