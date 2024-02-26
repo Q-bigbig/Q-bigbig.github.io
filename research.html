@@ -3,26 +3,26 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	</head>
 	<script>
-		document.addEventListener('DOMContentLoaded', function() {  
-		    var meta = document.querySelector('meta[name="viewport"]');  
-		    if (meta) {  
-		        meta.setAttribute('content', 'width=1520');  
-		    } else {  
-		        var newMeta = document.createElement('meta');  
-		        newMeta.setAttribute('name', 'viewport');  
-		        newMeta.setAttribute('content', 'width=1520');  
-		        document.head.appendChild(newMeta);  
-		    }  
+		document.addEventListener('DOMContentLoaded', function() {
+			var meta = document.querySelector('meta[name="viewport"]');
+			if (meta) {
+				meta.setAttribute('content', 'width=1520');
+			} else {
+				var newMeta = document.createElement('meta');
+				newMeta.setAttribute('name', 'viewport');
+				newMeta.setAttribute('content', 'width=1520');
+				document.head.appendChild(newMeta);
+			}
 		});
 	</script>
-	<body>﻿ 
+	<body>﻿
 		<!-- <meta name="viewport"
 			content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-		
-		
+
+
 		<title>Research</title>
 		<link rel="stylesheet" href="bootstrap.min.css">
 		<link rel="stylesheet" href="main.css">
@@ -149,7 +149,7 @@
 							</div>
 							<div style="width:100%;float: left;padding-top:50px">
 								<p style="font-size: 18px;text-align:justify;text-indent:2em;">
-									深度学习在篡改检测领域的研究方向涉及多种技术和方法，包括卷积神经网络、循环神经网络、生成对抗网络等。这些技术和方法可以帮助研究者更加准确地检测图像和视频是否被篡改或伪造，从而为数字取证和安全领域提供有力的支持。同时，深度学习在篡改检测领域的研究也需要考虑数据收集、模型训练、实验评估等方面的问题，以及如何应对各种类型的篡改和伪造攻击。
+									图像篡改检测是指利用计算机技术和图像处理算法，对图像进行自动分析，以识别和检测图像是否被篡改或修改过的过程。图像篡改可能包括图像拼接、复制粘贴、对象移除、色彩篡改等多种手段。图像篡改检测技术在许多领域都有应用，如数字取证、安全监控、社交媒体内容真实性验证等。图像篡改检测的关键在于提取图像的特征并比较它们之间的差异。这些特征可能包括像素值、纹理、颜色、形状等。通过比较原始图像和疑似篡改图像之间的特征差异，可以检测出图像是否被篡改。此外，基于深度学习的算法，研究人员可以通过训练模型来识别和检测图像中的篡改痕迹。
 								</p>
 							</div>
 						</div>
@@ -453,7 +453,9 @@
 				<div style="width:44%;float:left">
 					<h3 style="text-align:center;margin-top:5%"><b>Abstract</b></h3>
 					<p style="font-size:16;text-align:justify;text-indent:2em;">
-						重新采样图像的验证问题已经研究了很多年。然而，目前很少有研究提出基于统计模型的检测方法，导致无法全面分析重采样检测器的统计性能。为了填补这一空白，我们利用参数模型来揭示重采样伪造的蛛丝马迹，该模型用残余噪声的分布来描述。随后，我们提出了一个描述来自重采样图像的残余噪声的统计模型。然后，将检测问题置于假设检验理论的框架中。通过设计纹理权重图来考虑图像内容，建立了两种类型的统计检测器。在所有分布参数完全已知的理想情况下，提出了似然比检验（LRT），并从理论上确定了其性能。根据似然比检验的统计性能，可以成功获得检测能力的上限。在实际应用中，当分布参数未知时，建立了基于参数估计的三种不同映射的广义似然比检验。在模拟数据和真实自然图像上的数值结果凸显了我们提出的方法的相关性。
+						鉴别重采样图像的取证问题已经开展多年。然而，目前很少有研究提出基于统计模型的检测方法，导致不能充分分析重采样检测器的统计性能。为了填补这一空缺，我们利用一种参数模型揭示了重采样伪造的痕迹，这种痕迹以残差噪声分布的形式描述。具体地，我们提出了一个统计模型，用于描述重采样图像中的残差噪声，检测问题因此被纳入假设检验理论的框架中。在设计纹理权重图的同时，考虑图像内容，建立了两种类型的统计检测器：在理想情况下，即所有分布参数都是已知的情况下，我们提出了似然比校检测器（Likelihood
+						Ratio Test,
+						LRT），并在理论上对其性能进行了建模，通过利用LRT的统计性能，我们成功获得了检测性能的上界；在实际应用中，即分布参数未知的情况下，我们建立了基于参数估计的广义LRT，其中包含三种不同映射。在模拟数据和真实自然图像上的数值结果证明了我们提出方法的相关性。
 					</p>
 				</div>
 				<div class="col-sm-12" style="margin-top:40px">
@@ -476,7 +478,10 @@
 				<div style="width:44%;float:left">
 					<h3 style="text-align:center;margin-top:5%"><b>Abstract</b></h3>
 					<p style="font-size:16;text-align:justify;text-indent:2em;">
-						随着图像着色技术的发展，再着色图像（RIs）变得越来越真实，使得视觉上很难与自然图像（NIs）区分开来。最近，研究人员提出了针对再着色图像的检测方法。然而，目前的检测方法仍然存在泛化能力差、训练样本规模大、训练特征维数高、计算成本高等局限性。针对这些问题，本文提出了一种基于侧向色差（LCA）不一致性及其统计差异的新方法。一般来说，RIs的LCA特征数量少于NIs，这启发我们设计区分两类图像的分类器。特别是，我们建议采用非常低的五维特征来支持经典的SVM机制。我们使用基线ImageNet和Oxford数据集来验证所提方法的有效性。
+						随着图像重着色技术的发展，经重着色的图像（Recolored Image, RIs）变得越来越真实，很难在视觉上将其与自然图像（Natural Images,
+						NIs）区分开来。最近，研究者们提出了一系列针对RIs的检测方法。然而，当前的检测方法仍然存在一些局限性，例如泛化性能差、需要大规模的训练样本、训练特征维度高以及计算成本高等。为了解决这些问题，本文提出了一种基于横向色差（Lateral
+						Chromatic Aberration,
+						LCA）不一致性及其统计差异的新方法。一般来说，与NIs相比，RIs的LCA特征较少，这启发了我们设计用于区分两种类型图像的分类器。特别地，我们提出采用低维特征输入至SVM的机制，使用基准的ImageNet和Oxford数据集来验证所提方法的有效性，其中我们提出的方法的性能与当前最新研究媲美。
 					</p>
 				</div>
 				<div class="col-sm-12" style="margin-top:40px">
@@ -500,7 +505,9 @@
 				<div style="width:44%;float:left">
 					<h3 style="text-align:center;margin-top:5%"><b>Abstract</b></h3>
 					<p style="font-size:16;text-align:justify;text-indent:2em;">
-						为了解决图像伪造检测问题，人们提出了许多取证工具。大多数现有工具在有大量训练集的监督情况下表现高效，但其统计性能无法通过分析确定。此外，针对图像取证，特别是图像拼接伪造检测提出基于统计模型的检测器的研究有限。因此，在本文中，我们提出了一种无需训练、具有分析统计性能的拼接伪造检测器。该检测器是基于JPEG图像的简化噪声模型设计的，该模型假定像素的方差是像素期望值的二次函数。所提出的简化噪声模型有两个参数，这两个参数可以作为图像伪造检测的相机指纹。在假设检验理论的框架下，设计了一种免训练的广义似然比检验（GLRT），在规定的误报率下保证了较高的检测性能。此外，检测阈值的配置与图像内容无关。数值结果验证了简化噪声模型的准确性和所提检测器的有效性。
+						为了解决图像拼接篡改的检测问题，学者已经提出了许多取证工具。大多数现有工具在基于大规模训练数据的有监督场景中表现出色，但它们的统计性能无法被充分分析和建模。因此，我们提出了基于统计模型的图像取证检测器，即一种无需训练的具有分析统计性能的取证检测器，可用于图像拼接伪造检测。该检测器的设计基于JPEG图像的简化噪声模型，该模型假设像素方差是像素期望的二次函数。所提出的简化噪声模型由两个参数表征，这两个参数可用作图像伪造检测的相机指纹。通过采用假设检验理论的框架，设计了一种无需训练的广义似然比检验（Generalized
+						Likelihood Ratio Test,
+						GLRT），该检验确保在指定的虚警率下实现高检测性能。此外，检测阈值可以与图像内容无关的方式配置。数值结果验证了简化噪声模型的准确性以及所提出的检测器的有效性。
 					</p>
 				</div>
 				<div class="col-sm-12" style="margin-top:40px" id="Data_hiding">
