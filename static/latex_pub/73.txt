@@ -1,0 +1,7 @@
+@article{qiao2024deepfake,
+  title={Deepfake Detection Fighting against Noisy Label Attack},
+  author={Qiao, Tong and Xie, Shichuang and Chen, Yanli and Retraint, Florent and Shi, Ran and Luo, Xiangyang},
+  journal={IEEE Transactions on Multimedia},
+  year={2024},
+  publisher={IEEE}
+}
