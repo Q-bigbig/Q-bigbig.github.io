@@ -1,0 +1,8 @@
+@article{hu2024privacy,
+  title={Privacy-preserving face recognition method based on extensible feature extraction},
+  author={Hu, Weitong and Zhou, Di and Zhu, Zhenxin and Qiao, Tong and Yao, Ye and Hassaballah, Mahmoud},
+  journal={Journal of Visual Communication and Image Representation},
+  pages={104140},
+  year={2024},
+  publisher={Elsevier}
+}

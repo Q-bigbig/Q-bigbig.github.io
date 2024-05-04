@@ -1,0 +1,10 @@
+@article{hameed2024dgm,
+  title={IS-DGM: an improved steganography method based on a deep generative model and hyper logistic map encryption via social media networks},
+  author={Hameed, Mohamed Abdel and Hassaballah, M and Qiao, Tong},
+  journal={Multimedia Systems},
+  volume={30},
+  number={3},
+  pages={129},
+  year={2024},
+  publisher={Springer}
+}
