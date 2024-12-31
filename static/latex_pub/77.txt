@@ -1,0 +1,7 @@
+@inproceedings{el2024s2fb,
+  title={S2FB IoU: Improving Boundary-based Object-Centric Image Segmentation Quality Evaluation},
+  author={El Filali, Rim and Jdaba, Soufiane and Xie, Ronghui and Shi, Ran and Qiao, Tong and Qiaodong, Pan and Wu, Ting},
+  booktitle={Proceedings of the 6th ACM International Conference on Multimedia in Asia},
+  pages={1--7},
+  year={2024}
+}
