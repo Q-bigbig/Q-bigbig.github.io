@@ -1,0 +1,7 @@
+@article{xing2025data,
+  title={A Data Ownership Authentication Method for Graph Neural Networks via Clean-Label Backdoor},
+  author={Xing, Xiaogang and Xu, Ming and Bai, Yujing and Zheng, Ruifeng and Qiao, Tong},
+  journal={IEEE Internet of Things Journal},
+  year={2025},
+  publisher={IEEE}
+}
