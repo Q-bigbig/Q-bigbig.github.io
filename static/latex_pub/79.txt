@@ -1,0 +1,7 @@
+@article{tang2025bidirectional,
+  title={Bidirectionally Guided Multi-Scale Feature Decoding Network for High-Resolution Salient Object Detection},
+  author={ Tang, Jiangping and Guo, Shuyao and Zhou, Xiaofei and Bao, Liuxin and Zhang, Jiyong and Qiao, Tong},
+  journal={IET Image Processing},
+  year={2025},
+  publisher={IET}
+}

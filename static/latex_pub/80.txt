@@ -1,0 +1,7 @@
+@article{shi2025deepfake,
+  title={Deepfake Video Traceability and Authentication via Source Attribution},
+  author={Shi, Canghai and Qiao, Minglei and Li, Zhuang and Akhtar, Zahid and Wang, Bin and Han, Meng and Qiao, Tong},
+  journal={IET Biometrics},
+  year={2025},
+  publisher={IET}
+}
