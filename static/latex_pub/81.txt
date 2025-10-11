@@ -1,0 +1,8 @@
+@article{xie2025deepfake,
+  title={DeepFake detection in the AIGC era: A survey, benchmarks, and future perspectives},
+  author={Xie, Shichuang and Qiao, Tong and Li, Sheng and Zhang, Xinpeng and Zhou, Jiantao and Feng, Guorui},
+  journal={Information Fusion},
+  year={2025},
+  publisher={Elsevier},
+  doi={10.1016/j.inffus.2025.103740}
+}
