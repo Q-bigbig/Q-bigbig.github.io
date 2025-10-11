@@ -1,7 +1,7 @@
-@article{tang2025bidirectional,
-  title={Bidirectionally Guided Multi-Scale Feature Decoding Network for High-Resolution Salient Object Detection},
-  author={ Tang, Jiangping and Guo, Shuyao and Zhou, Xiaofei and Bao, Liuxin and Zhang, Jiyong and Qiao, Tong},
-  journal={IET Image Processing},
+@article{shi2025deepfake,
+  title={Deepfake Video Traceability and Authentication via Source Attribution},
+  author={Shi, Canghai and Qiao, Minglei and Li, Zhuang and Akhtar, Zahid and Wang, Bin and Han, Meng and Qiao, Tong},
+  journal={IET Biometrics},
   year={2025},
   publisher={IET}
 }
