@@ -1,8 +1,7 @@
-@article{xie2025deepfake,
-  title={DeepFake detection in the AIGC era: A survey, benchmarks, and future perspectives},
-  author={Xie, Shichuang and Qiao, Tong and Li, Sheng and Zhang, Xinpeng and Zhou, Jiantao and Feng, Guorui},
-  journal={Information Fusion},
+@article{wang2025zero,
+  title={Zero-Shot Interpretable Image Steganalysis for Invertible Image Hiding},
+  author={Wang, Hao and Yao, Yiming and Xie, Yaguang and Qiao, Tong and Zhao, Zhidong},
+  journal={IEEE Signal Processing Letters},
   year={2025},
-  publisher={Elsevier},
-  doi={10.1016/j.inffus.2025.103740}
+  publisher={IEEE}
 }
