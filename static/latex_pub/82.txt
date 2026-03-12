@@ -1,0 +1,7 @@
+@article{Guo2025recent,
+  title={Recent  progress of the security research for multimodal large models},
+  author={Guo Y F， Yu Z T， Liu A S， Zhou W B， Qiao T， Li B， Zhang W M， Kang X G， Zhou L N， Yu N H and Huang J W},
+  journal={Journal of Image and Graphics，30（6）：0674-0704.},
+  year={2025},
+  publisher={Journal of Image and Graphics}
+}
