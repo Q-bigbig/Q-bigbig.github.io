@@ -1,0 +1,7 @@
+@article{li2026unsupervised,
+  title={Unsupervised Deepfake Detection via Camera Source Clustering and Temporal-Spatial Features},
+  author={Zhuang Li, Chenxu Lu, Zahid Akhtar, Tong Qiao},
+  journal={IEEE Transactions on Multimedia},
+  year={2026},
+  publisher={IEEE}
+}
